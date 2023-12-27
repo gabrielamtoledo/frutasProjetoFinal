@@ -5,10 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body style="width: 100vw; height: 100vh; margin: 0;">
+    <iframe src="header.html" style="width:100%; height:200px" frameborder="0"></iframe>
+    <section>
+        <article>
+            <p>Seu carrinho:</p>
+            <div>
+                <img src="img/pineapple.png" alt="Manga" />
+                <div>
+                    <p>R$5.99</p>
+                    <p>Manga, 1 kg</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/iconMinus.png" alt="Diminuir" />
+                <span>1</span>
+                <img src="img/iconPlus.png" alt="Aumentar" />
+                <img src="img/iconBasket.png" alt="AddCesta" />
+            </div>
+        </article>
+        <article>
+            <header>
+                <h1>Total</h1>
+                <p>R$9.99</p>
+            </header>
+        </article>
+    </section>
+
+    <section>
+        <h2>Seus dados:</h2>
+        <div>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" />
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" />
+            </div>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" />
+            </div>
+            <div>
+                <label for="numCartao">Número do cartão</label>
+                <input type="text" id="numCartao" name="numCartao" />
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="mm-yy">MM/YY</label>
+                <input type="text" id="mm-yy" name="mm-yy" />
+            </div>
+            <div>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" />
+            </div>
+        </div>
+        <a href="compraSucesso.html">
+            <button>Enviar pedido</button>
+        </a>
+    </section>
+    <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
+    <!-- <header>
         <img src="img/logoFrutaWeb.png" alt="logo"/>
-        <div> Home Menu Como Funciona Contato</div>
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="menu.html">Menu</a> 
+            <a href="comoFunciona.html">Como Funciona </a>
+            <a href="contato.html">Contato</a>
+        </nav>
         <img src="img/iconeCesta.png" alt="carrinho"/>
     </header>
     
@@ -16,11 +82,16 @@
     
     <footer> 
         <img src="img/logoFrutaWeb.png" alt="logo"/>
-            <div>Home <br> Menu <br> Como <br> Funciona Contato</div>
+            <nav> 
+                <a href="index.html">Home</a> <br>
+                <a href="menu.html">Menu</a> <br>
+                <a href="comoFunciona.html">Como Funciona </a> <br>
+                <a href="contato.html">Contato</a>
+            </nav>
             <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
             <img src="img/logosCartoes.png" alt="Cartões Aceitos"/>
             <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/>
-    </footer>
+    </footer> -->
     
 </body>
 </html>
