@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style> 
+    main {
+        background-image: url(img/contato_BG.png); 
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+    }</style>
 </head>
 <body>
     <header>
@@ -18,7 +25,19 @@
     </header>
     
     <main>
-        
+        <div>
+        <h1>Nos envie uma mensagem!</h1>
+
+    <form action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Nome" required> <br>
+
+        <input type="email" id="email" name="email" placeholder="Email" required> <br>
+
+        <textarea id="message" name="message" rows="10" placeholder="O que tem a nos falar?" required></textarea> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+        </div>
     </main>
     
     <footer> 
