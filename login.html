@@ -11,10 +11,46 @@
             background-color: #FFF2D8;
             border-style: hidden;
         }
+
+        nav{
+            border-bottom: 1px solid black;
+        }
+
+        .header ol{
+            list-style-type: none;
+            padding-left: o;
+        }
+
+        .header{
+            display: inline-block;
+        }
+
+        .header a::after{
+            display: inline-block;
+            color: #000;
+            font-size: 20px;
+            font-weight: bold;
+        }
     </style>
 
 </head>
 <body>
+    <!-- <iframe src="header.html" frameborder="0"></iframe> -->
+    <header>
+        <img src="img/logoFrutaWeb.png" alt="logo" />
+        <nav class="header">
+            <ol>
+                <li class="header"><a href="index.html">Home</a></li>
+                <li class="header"><a href="menu.html">Menu</a></li>
+                <li class="header"><a href="comoFunciona.html">Como Funciona </a></li>
+                <li class="header"><a href="contato.html">Contato</a></li>     
+                <li class="header"><img src="img/iconeCesta.png" alt="carrinho" /></li>  
+                <li class="header"><a href="#">Área do Produtor</a></li>     
+            </ol>
+        </nav>
+    </header>
+
+
     <div class="tela-login">
         <h1>Login</h1>
         <input type="text" placeholder="Email" id="Login">
@@ -23,6 +59,7 @@
         <br><br>
         <button>Entrar</button>
     </div>
+
 
     <!-- <header>
         <img src="img/logoFrutaWeb.png" alt="logo"/>
