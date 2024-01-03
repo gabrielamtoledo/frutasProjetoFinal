@@ -6,48 +6,66 @@
     <title>Login</title>
 
     <style>
+        nav{
+            background-color: #FFF2D8;
+        }
+
+        /* .header ol{
+            list-style-type: none;
+            padding-left: 0%;
+            background-color: blue;
+        } */
+
+        .header{
+            display: inline;
+            background-color: #ffeabf;
+            padding: 10px;
+            border-style: none;
+            font-size: 17px;
+        }
+
+        /* .header a::after{
+            display: inline-block;
+            color: #000;
+            font-size: 20px;
+            font-weight: bold;
+        } */
+
+        .logo{
+            width: 250px;
+        }
+
+        .carrinho{
+            width: 27px;
+        }
+
         .tela-login{
             text-align: center;
             background-color: #FFF2D8;
             border-style: hidden;
         }
 
-        nav{
-            border-bottom: 1px solid black;
-        }
-
-        .header ol{
-            list-style-type: none;
-            padding-left: o;
-        }
-
-        .header{
-            display: inline-block;
-        }
-
-        .header a::after{
-            display: inline-block;
-            color: #000;
-            font-size: 20px;
-            font-weight: bold;
+        .icones{
+            width: 160px;
+            padding: 20px;
         }
     </style>
 
 </head>
 <body>
-    <!-- <iframe src="header.html" frameborder="0"></iframe> -->
     <header>
-        <img src="img/logoFrutaWeb.png" alt="logo" />
-        <nav class="header">
-            <ol>
-                <li class="header"><a href="index.html">Home</a></li>
-                <li class="header"><a href="menu.html">Menu</a></li>
-                <li class="header"><a href="comoFunciona.html">Como Funciona </a></li>
-                <li class="header"><a href="contato.html">Contato</a></li>     
-                <li class="header"><img src="img/iconeCesta.png" alt="carrinho" /></li>  
-                <li class="header"><a href="login.html">Área do Produtor</a></li>     
-            </ol>
-        </nav>
+        <!-- <img src="img/logoFrutaWeb.png" alt="logo" /> -->
+        <div class="header-teste"></div>
+            <nav>               
+                <img class="logo" src="img/logoFrutaWeb.png" alt="logo"/></li>
+                <a class="header" href="index.html">Home</a></li>
+                <a class="header" href="menu.html">Menu</a></li>
+                <a class="header" href="comoFunciona.html">Como Funciona </a></li>
+                <a class="header" href="contato.html">Contato</a></li>     
+                <img class="carrinho" src="img/iconeCesta.png" alt="carrinho" /></li>  
+                <a class="header" href="login.html">Área do Produtor</a></li>        
+            </nav>
+        </div>
     </header>
 
 
@@ -59,16 +77,28 @@
         <br><br>
         <button>Entrar</button>
     </div>
-
-
-    <!-- <header>
-        <img src="img/logoFrutaWeb.png" alt="logo"/>
-        <div> Home Menu Como Funciona Contato</div>
-        <img src="img/iconeCesta.png" alt="carrinho"/>
-    </header>
     
     
-    <footer> 
+    <footer>
+        
+        <div class="footer-teste">
+            <nav>
+                <ul>
+                    <img class="logo" src="img/logoFrutaWeb.png" alt="logo" />
+                    <li><a class="footer" href="index.html">Home</a></li>
+                    <li><a class="footer" href="menu.html">Menu</a></li>
+                    <li><a class="footer" href="comoFunciona.html">Como Funciona </a></li>
+                    <li><a class="footer" href="contato.html">Contato</a></li>
+                    
+                </ul>
+                <p>@ 2023 FrutaWeb, Inc. All rights reserved.</p>
+                <img class="icones" src="img/logosCartoes.png" alt="Cartões Aceitos" />
+                <img class="icones" src="img/iconesMidiaSocial.png" alt="Mídias Sociais" />
+            </nav>
+        </div>
+    </footer>
+
+    <!-- <footer> 
         <img src="img/logoFrutaWeb.png" alt="logo"/>
             <div>Home <br> Menu <br> Como <br> Funciona Contato</div>
             <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
