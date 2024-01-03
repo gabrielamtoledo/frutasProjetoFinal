@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <style>
-        
+    <style>        
         nav{
             background-color: #FFF2D8;
         }
 
         .logo{
-            width: 220px;
+            width: 280px;
         }
 
         .carrinho{
@@ -20,7 +19,7 @@
         }
 
         .header{
-            padding: 105px;
+            padding: 90px;
         }
 
         .tela-login{
@@ -48,11 +47,19 @@
 
         .footer-teste .icones{
             width: 170px;
+            display: flex;            
+        } 
+
+        .footer-teste .footer{
+            font-size: 16px;
+            padding: 5px;
+            text-align: center; 
         }
 
+    
     </style>
-
 </head>
+
 <body>
     <header>
         <!-- <img src="img/logoFrutaWeb.png" alt="logo" /> -->
@@ -69,26 +76,27 @@
         </div>
     </header>
 
-
     <div class="tela-login">
         <h1>Login</h1>
         <input type="text" placeholder="Email" id="Login">
         <br><br>
         <input type="password" placeholder="Senha" id="Senha">
         <br><br>
-        <button>Entrar</button>
+        <button><a class="login" href="index.html">Entrar</a></button>
+        <br><br>
+        <a href="#">Esqueceu sua senha?</a>
+
     </div>
-    
     
     <footer>
         <div class="footer-teste">
             <nav>
                 <ul>
-                    <img class="logo" src="img/logoFrutaWeb.png" alt="logo" />
-                    <li><a class="footer" href="index.html">Home</a></li>
-                    <li><a class="footer" href="menu.html">Menu</a></li>
-                    <li><a class="footer" href="comoFunciona.html">Como Funciona </a></li>
-                    <li><a class="footer" href="contato.html">Contato</a></li>                    
+                    <img class="logo" src="img/logoFrutaWeb.png" alt="logo"/>
+                    <li class="footer"><a href="index.html">Home</a></li>
+                    <li class="footer"><a href="menu.html">Menu</a></li>
+                    <li class="footer"><a href="comoFunciona.html">Como Funciona </a></li>
+                    <li class="footer"><a href="contato.html">Contato</a></li>                    
                 </ul>
                 <p>@ 2023 FrutaWeb, Inc. All rights reserved.</p>
                 <img class="icones" src="img/logosCartoes.png" alt="Cartões Aceitos" />
