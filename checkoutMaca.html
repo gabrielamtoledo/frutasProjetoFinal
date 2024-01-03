@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!-- Estrutura de header para utilizar com Javascript
 <body style="width: 100vw; height: 100vh; margin: 0;">
     <iframe src="header.html" style="width:100%; height:200px" frameborder="0"></iframe>
-    <section>
+-->
+<body>
+   <header>
+        <img src="img/logoFrutaWeb.png" alt="logo"/>
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="menu.html">Menu</a> 
+            <a href="comoFunciona.html">Como Funciona </a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <img src="img/iconeCesta.png" alt="carrinho"/>
+   </header>
+   <section>
         <article>
             <p>Seu carrinho:</p>
             <div>
@@ -17,12 +30,12 @@
                     <p>Maçã, 1 kg</p>
                 </div>
             </div>
-            <div>
-                <img src="img/iconMinus.png" alt="Diminuir" />
-                <span>1</span>
-                <img src="img/iconPlus.png" alt="Aumentar" />
-                <img src="img/iconBasket.png" alt="AddCesta" />
-            </div>
+        <div class="quantity">
+            <button class="decrease-quantity"><img src="img/iconMinus.png" alt="Diminuir" /></button>
+            <span id="quantity">1</span>
+            <button class="increase-quantity"><img src="img/iconPlus.png" alt="Aumentar" /></button>
+            <button class="add-to-cart"><img src="img/iconBasket.png" alt="AddCesta" /></button>
+        </div>
         </article>
         <article>
             <header>
@@ -66,32 +79,20 @@
             <button>Enviar pedido</button>
         </a>
     </section>
-    <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
-    <!-- <header>
-        <img src="img/logoFrutaWeb.png" alt="logo"/>
+    <footer> 
+    <img src="img/logoFrutaWeb.png" alt="logo"/>
         <nav> 
-            <a href="index.html">Home</a> 
-            <a href="menu.html">Menu</a> 
-            <a href="comoFunciona.html">Como Funciona </a>
+            <a href="index.html">Home</a> <br>
+            <a href="menu.html">Menu</a> <br>
+            <a href="comoFunciona.html">Como Funciona </a> <br>
             <a href="contato.html">Contato</a>
         </nav>
-        <img src="img/iconeCesta.png" alt="carrinho"/>
-    </header>
-    
-    
-    
-    <footer> 
-        <img src="img/logoFrutaWeb.png" alt="logo"/>
-            <nav> 
-                <a href="index.html">Home</a> <br>
-                <a href="menu.html">Menu</a> <br>
-                <a href="comoFunciona.html">Como Funciona </a> <br>
-                <a href="contato.html">Contato</a>
-            </nav>
-            <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
-            <img src="img/logosCartoes.png" alt="Cartões Aceitos"/>
-            <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/>
-    </footer> -->
-    
+        <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
+        <img src="img/logosCartoes.png" alt="Cartões Aceitos"/>
+        <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/>
+    </footer>
+    <!-- Estrutura de footer para utilizar com Javascript
+    <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
+    -->    
 </body>
 </html>
