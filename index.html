@@ -9,20 +9,22 @@
 <body>
     <header>
         <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo"/>
-        <a class="guiasHeader" href="index.html">Home</a> 
-        <a class="guiasHeader" href="menu.html">Menu</a> 
-        <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
-        <a class="guiasHeader" href="contato.html">Contato</a>
-        <img src="img/iconeCesta.png" alt="carrinho"/><a href="login.html"> <button id="botaoAreaProdutor">Área do produtor</button></a>
+        <ul id="guiasHeader">
+            <li><a class="guiasHeader" href="index.html">Home</a> </li>
+            <li><a class="guiasHeader" href="menu.html">Menu</a></li>
+            <li><a class="guiasHeader" href="comoFunciona.html">Como Funciona </a></li>
+            <li><a class="guiasHeader" href="contato.html">Contato</a></li>
+</ul>
+        <img id="addToCart" src="img/iconeCesta.png" alt="carrinho"/><a href="login.html"> <button id="botaoAreaProdutor">Área do produtor</button></a>
     </header>
 
     <nav id="navIndex">
         <div id="navIndexTexto">Conectando a natureza à sua porta: frutas frescas, direto do produtor para você!</div>
         <img id="imagemFrutas" src="img/frutasHome.png" alt="frutas variadas"/>
-        <a href="menu.html"><button>Compre agora</button></a>
+        <a  href="menu.html"><button id="botaoCompreAgora">Compre agora</button></a>
     </nav>
 
-    <section>
+    <section id="menuIndex">
         <div>Escolha as frutas que deseja adicionar ao carrinho</div>
         <article>
             <img src="img/kiwi.png" alt="kiwi"/> 
