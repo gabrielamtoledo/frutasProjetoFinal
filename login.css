@@ -10,17 +10,10 @@ nav {
     width: 27px;
 }
 
-body {
-    background-image: url("img/strawberry.png");
-    background-repeat: no-repeat;
-    background-position: 76% 50%;
-    background-size: 120px; 
-}
+.login-image{
+    position: relative;
 
-/* .strawberry-login{
-    background-image: url("img/strawberry.png");
-    background-size: 30px; 
-} */
+}
 
 .header {
     padding: 90px;
