@@ -13,17 +13,18 @@ nav {
 body {
     background-image: url("img/strawberry.png");
     background-repeat: no-repeat;
-    background-position: 82% 50%;
-}
-
-.header {
-    padding: 90px;
+    background-position: 76% 50%;
+    background-size: 120px; 
 }
 
 /* .strawberry-login{
     background-image: url("img/strawberry.png");
     background-size: 30px; 
 } */
+
+.header {
+    padding: 90px;
+}
 
 .tela-login {
     text-align: center;
@@ -40,13 +41,18 @@ body {
 }
 
 .tela-login input {
-    padding-inline-start: 80px;
-    padding-inline-end: 80px;
+    padding-inline: 80px;
+    height: 30px;
+    border-style: none;
 }
 
 .tela-login button {
     padding-inline-start: 60px;
     padding-inline-end: 60px;
+    height: 30px;
+    background-color: #407536;
+    border-radius: 5px;
+    border-style: none;
 }
 
 .footer-teste .icones {
