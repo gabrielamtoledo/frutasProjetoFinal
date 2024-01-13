@@ -81,3 +81,39 @@ header {
     top: 55px;
     right: 350px;
 }
+
+/* Login--------------------------------------------*/
+nav {
+    background-color: #FFF2D8;
+}
+
+.tela-login {
+    text-align: center;
+    background-color: #FFF2D8;
+    border-style: none;
+    border-radius: 8px;
+    width: 650px;
+    align-content: center;
+    margin: auto;
+    padding: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.tela-login input {
+    padding-inline: 80px;
+    height: 30px;
+    border-style: none;
+}
+
+.tela-login button {
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+    height: 30px;
+    background-color: #407536;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+/* Login--------------------------------------------*/
