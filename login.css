@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-<<<<<<< HEAD
-
 nav {
-    background-color: #ffffff;
+    background-color: #FFF2D8;
 }
 
 .logo {
@@ -13,19 +10,20 @@ nav {
     width: 27px;
 }
 
-header {
-    padding: 0px;
-    background-color: #FFF2D8;
-    height: 175 px;
-    width: 100%;
+body {
+    background-image: url("img/strawberry.png");
+    background-repeat: no-repeat;
+    background-position: 76% 50%;
+    background-size: 120px; 
 }
 
-.guiasHeader {
-    color: #190B00;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+/* .strawberry-login{
+    background-image: url("img/strawberry.png");
+    background-size: 30px; 
+} */
 
+.header {
+    padding: 90px;
 }
 
 .tela-login {
@@ -39,16 +37,22 @@ header {
     padding: 50px;
     margin-top: 70px;
     margin-bottom: 70px;
+
 }
 
 .tela-login input {
-    padding-inline-start: 80px;
-    padding-inline-end: 80px;
+    padding-inline: 80px;
+    height: 30px;
+    border-style: none;
 }
 
 .tela-login button {
     padding-inline-start: 60px;
     padding-inline-end: 60px;
+    height: 30px;
+    background-color: #407536;
+    border-radius: 5px;
+    border-style: none;
 }
 
 .footer-teste .icones {
@@ -61,6 +65,3 @@ header {
     padding: 5px;
     text-align: center;
 }
-
-=======
->>>>>>> 0de120c53d6f6a245d34d15c846419b864fa1289
