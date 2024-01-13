@@ -1,0 +1,49 @@
+        nav {
+            background-color: #FFF2D8;
+        }
+
+        .logo {
+            width: 280px;
+        }
+
+        .carrinho {
+            width: 27px;
+        }
+
+        .header {
+            padding: 90px;
+        }
+
+        .tela-login {
+            text-align: center;
+            background-color: #FFF2D8;
+            border-style: none;
+            border-radius: 8px;
+            width: 650px;
+            align-content: center;
+            margin: auto;
+            padding: 50px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+
+        .tela-login input {
+            padding-inline-start: 80px;
+            padding-inline-end: 80px;
+        }
+
+        .tela-login button {
+            padding-inline-start: 60px;
+            padding-inline-end: 60px;
+        }
+
+        .footer-teste .icones {
+            width: 170px;
+            display: flex;
+        }
+
+        .footer-teste .footer {
+            font-size: 16px;
+            padding: 5px;
+            text-align: center;
+        }
