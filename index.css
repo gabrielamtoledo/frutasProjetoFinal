@@ -129,6 +129,29 @@ header {
     height: 950px;
     width: 100%;
     background-color: #FFF2D8;
-
 }
+
+#textoSectionMenu {
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #190B00;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;    
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #190B00;
+} 
 
