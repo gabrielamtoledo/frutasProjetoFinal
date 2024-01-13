@@ -1,1 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+<<<<<<< HEAD
+
+nav {
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 280px;
+}
+
+.carrinho {
+    width: 27px;
+}
+
+header {
+    padding: 0px;
+    background-color: #FFF2D8;
+    height: 175 px;
+    width: 100%;
+}
+
+.guiasHeader {
+    color: #190B00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.tela-login {
+    text-align: center;
+    background-color: #FFF2D8;
+    border-style: none;
+    border-radius: 8px;
+    width: 650px;
+    align-content: center;
+    margin: auto;
+    padding: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.tela-login input {
+    padding-inline-start: 80px;
+    padding-inline-end: 80px;
+}
+
+.tela-login button {
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+}
+
+.footer-teste .icones {
+    width: 170px;
+    display: flex;
+}
+
+.footer-teste .footer {
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+=======
+>>>>>>> 0de120c53d6f6a245d34d15c846419b864fa1289

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: #FFF2D8;
+    height: 175 px;
+    width: 100%;
+}
+
+.guiasHeader {
+    color: #190B00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#logoFrutasWeb {
+    width: 337px;
+    height: auto;
+}@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: #FFF2D8;
+    height: 175 px;
+    width: 100%;
+}
+
+.guiasHeader {
+    color: #190B00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#guiasHeader {
+    width: 550px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-right: 20px;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+}
+
+#logoFrutasWeb {
+    width: 337px;
+    height: auto;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+}
+
+#botaoAreaProdutor {
+    background-color: #FF9F52;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    height: 80px;
+    width: 260px;
+    border-radius: 100px;
+    border: none;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+}
+#addToCart {
+    position: absolute;
+    top: 55px;
+    right: 350px;
+}
