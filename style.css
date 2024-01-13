@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 nav {
-    background-color: #FFF2D8;
+    background-color: #ffffff;
 }
 
 .logo {
@@ -12,8 +12,19 @@ nav {
     width: 27px;
 }
 
-.header {
-    padding: 90px;
+header {
+    padding: 0px;
+    background-color: #FFF2D8;
+    height: 175 px;
+    width: 100%;
+}
+
+.guiasHeader {
+    color: #190B00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
 }
 
 .tela-login {

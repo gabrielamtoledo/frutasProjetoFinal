@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: #FFF2D8;
+    height: 175 px;
+    width: 100%;
+}
+
+.guiasHeader {
+    color: #190B00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#logoFrutasWeb {
+    width: 337px;
+    height: auto;
+}
+
+#botaoAreaProdutor {
+    background-color: #FF9F52;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    height: 80px;
+    width: 260px;
+    border-radius: 100px;
+    border: none
+}
+
+#navIndex {
+    height: 800px;
+    width: 100%;
+}
+
+#navIndexTexto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #190B00;
+}
+
+#imagemFrutas {
+    width: 788px;
+    height: auto;
+}
+
