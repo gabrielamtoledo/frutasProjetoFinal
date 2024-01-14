@@ -29,7 +29,7 @@ header {
 }
 header {
     background-color: #FFF2D8;
-    height: 175 px;
+    height: 175px;
     width: 100%;
 }
 
@@ -91,8 +91,8 @@ nav {
     text-align: center;
     background-color: #FFF2D8;
     border-style: none;
-    border-radius: 8px;
-    width: 650px;
+    border-radius: 10px;
+    width: 850px;
     align-content: center;
     margin: auto;
     padding: 50px;
@@ -101,22 +101,28 @@ nav {
 }
 
 .telaLogin input {
-    padding-inline: 80px;
-    height: 30px;
+    padding-inline-start: 16rem;
+    padding-inline-end: 16rem;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
     border-style: none;
 }
 
 .telaLogin button {
-    padding-inline-start: 60px;
-    padding-inline-end: 60px;
-    height: 30px;
+    padding-inline-start: 10rem;
+    padding-inline-end: 10rem;
+    height: 40px;
     background-color: #407536;
-    border-radius: 5px;
+    border-radius: 6px;
     border-style: none;
 }
 
+
 .footerTeste .footer {
-    font-size: 16px;
+    background-color: #FFF2D8;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
     padding-inline-start: 400px;
     height: 35px;
 }
@@ -125,9 +131,14 @@ nav {
     width: 180px;
     display: flex;
     padding-inline-start: 70rem;
+
 }
 
 .footerTeste .redeSocial{
+    padding-inline-start: 75rem;
+}
 
+.allRights{
+    font-size: 22px;
 }
 /* Login--------------------------------------------*/
