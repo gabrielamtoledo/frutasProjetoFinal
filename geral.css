@@ -87,7 +87,7 @@ nav {
     background-color: #FFF2D8;
 }
 
-.tela-login {
+.telaLogin {
     text-align: center;
     background-color: #FFF2D8;
     border-style: none;
@@ -100,13 +100,13 @@ nav {
     margin-bottom: 70px;
 }
 
-.tela-login input {
+.telaLogin input {
     padding-inline: 80px;
     height: 30px;
     border-style: none;
 }
 
-.tela-login button {
+.telaLogin button {
     padding-inline-start: 60px;
     padding-inline-end: 60px;
     height: 30px;
@@ -115,5 +115,19 @@ nav {
     border-style: none;
 }
 
+.footerTeste .footer {
+    font-size: 16px;
+    padding-inline-start: 400px;
+    height: 35px;
+}
 
+.footerTeste .icones {
+    width: 180px;
+    display: flex;
+    padding-inline-start: 70rem;
+}
+
+.footerTeste .redeSocial{
+
+}
 /* Login--------------------------------------------*/
