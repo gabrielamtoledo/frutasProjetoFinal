@@ -39,11 +39,11 @@
       width: 100%;
       flex: 0 0 auto;
     }
-    
-    .order .caixaInfoBox {
+    .order .caixaInfoBox input,
+    .order .caixaInfoBoxSmall input {
       width: 100%;
       height: 100%;
-      border: none; /* Remove as bordas do input */
+      border: none; /* Remove a borda padrão do input */
       outline: none; /* Remove o contorno ao focar no input */
       background: transparent; /* Define o fundo como transparente para manter o estilo da caixa */
       font-family: "Inter-SemiBold", Helvetica;
@@ -52,8 +52,21 @@
       font-size: 24px;
       letter-spacing: 0;
       line-height: normal;
+      position: relative;
     }
     
+    .order .caixaInfoBox input::after,
+    .order .caixaInfoBoxSmall input::after {
+      content: ""; /* Adiciona um conteúdo vazio ao pseudoelemento */
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #190b00; /* Adiciona a borda personalizada */
+      border-radius: 50px; /* Adiciona bordas arredondadas, ajuste conforme necessário */
+      pointer-events: none; /* Garante que o pseudoelemento não interfira nas interações do usuário */
+    }
     .order .textoCaixaInfoBox {
       position: relative;
       width: fit-content;
@@ -74,24 +87,7 @@
       flex: 0 0 auto;
       display: flex;
       position: relative;
-    }
-    
-    .order .caixaInfoBoxSmall {
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 25px 0px;
-      flex: 1;
-      flex-grow: 1;
-      background-color: #ffffff;
-      border-radius: 50px;
-      overflow: hidden;
-      border: 2px solid;
-      border-color: #190b00;
-      display: flex;
-      position: relative;
-    }
-    
+    }   
     .order .buttomFramePedido {
       display: flex;
       flex-direction: column;
