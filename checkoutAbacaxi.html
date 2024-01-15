@@ -4,6 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="geral.css">
+    <style>
+    .order {
+      display: flex;
+      flex-direction: column;
+      width: 720px;
+      height: 764px;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 30px 90px;
+      position: relative;
+    }
+    
+    .order .caixaTexto1 {
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "Inter-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #190b00;
+      font-size: 36px;
+      letter-spacing: 0;
+      line-height: 30px;
+      white-space: nowrap;
+    }
+    
+    .order .grupoInfoBox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .order .caixaInfoBox {
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 25px 0px;
+      background-color: #ffffff;
+      border-radius: 50px;
+      overflow: hidden;
+      border: 2px solid;
+      border-color: #190b00;
+      display: flex;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .order .textoCaixaInfoBox {
+      position: relative;
+      width: fit-content;
+      margin-top: -2px;
+      font-family: "Inter-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #dadada;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .order .colunaBox {
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .order .caixaInfoBoxSmall {
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 25px 0px;
+      flex: 1;
+      flex-grow: 1;
+      background-color: #ffffff;
+      border-radius: 50px;
+      overflow: hidden;
+      border: 2px solid;
+      border-color: #190b00;
+      display: flex;
+      position: relative;
+    }
+    
+    .order .buttomFramePedido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .order .sign-up {
+      display: inline-flex;
+      height: 79px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0px 75px;
+      position: relative;
+      background-color: #407536;
+      border-radius: 100px;
+    }
+    
+    .order .textoButtomFrame {
+      position: relative;
+      width: fit-content;
+      font-family: "Inter-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+        
+    </style>
     <title>Checkout</title>
 </head>
 <!-- Estrutura para uso do header para uso com javascript
@@ -43,40 +171,24 @@
         </article>
     </section>
 
-    <section>
-        <h2>Seus dados:</h2>
-        <div>
-            <div>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" />
-            </div>
-            <div>
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" id="sobrenome" name="sobrenome" />
-            </div>
-            <div>
-                <label for="endereco">Endereço</label>
-                <input type="text" id="endereco" name="endereco" />
-            </div>
-            <div>
-                <label for="numCartao">Número do cartão</label>
-                <input type="text" id="numCartao" name="numCartao" />
-            </div>
-        </div>
-        <div>
-            <div>
-                <label for="mm-yy">MM/YY</label>
-                <input type="text" id="mm-yy" name="mm-yy" />
-            </div>
-            <div>
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" />
-            </div>
-        </div>
-        <a href="compraSucesso.html">
-            <button>Enviar pedido</button>
-        </a>
-    </section>
+    <div class="order">
+      <div class="caixaTexto1">Seus dados:</div>
+      <div class="grupoInfoBox">
+        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Nome</div></div>
+        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Sobrenome</div></div>
+        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Endereço</div></div>
+        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Número do cartão</div></div>
+      </div>
+      <div class="colunaBox">
+        <div class="caixaInfoBoxSmall"><div class="textoCaixaInfoBox">MM/YY</div></div>
+        <div class="caixaInfoBoxSmall"><div class="textoCaixaInfoBox">CVV</div></div>
+      </div>
+      <div class="buttomFramePedido">
+        <div class="sign-up"><div class="textoButtomFrame">Enviar pedido</div></div>
+      </div>
+    </div>
+
+    
     <footer>
         <div class="footer">
             <ul id="guiasFooter" class="guiasFooter">
