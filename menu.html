@@ -1,130 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <style>
-         .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-        } 
-
-        /* criar javascript para adicionar ao carrinho e selecionar a quantidade de produtos */
-
+      /* criar javascript para adicionar ao carrinho e selecionar a quantidade de produtos */
     </style>
-</head>
-<body>
+    <link rel="stylesheet" href="geral.css" />
+  </head>
+  <body>
     <header>
-        <img src="img/logoFrutaWeb.png" alt="logo"/>
-        <a class="guiasHeader" href="index.html">Home</a> 
-        <a class="guiasHeader" href="menu.html">Menu</a> 
-        <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
-        <a class="guiasHeader" href="contato.html">Contato</a>
-        <img src="img/iconeCesta.png" alt="carrinho"/><a href="login.html"> <button id="botaoAreaProdutor">Área do produtor</button></a>
+      <img src="img/logoFrutaWeb.png" alt="logo" />
+      <a class="guiasHeader" href="index.html">Home</a>
+      <a class="guiasHeader" href="menu.html">Menu</a>
+      <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
+      <a class="guiasHeader" href="contato.html">Contato</a>
+      <img src="img/iconeCesta.png" alt="carrinho" /><a href="login.html">
+        <button id="botaoAreaProdutor">Área do produtor</button></a
+      >
     </header>
-    
+
     <main>
+      <div class="container-cards">
         <div class="card">
-            <img src="img/apple.png" alt="Maçã" width="200px">
-            <p>Maca, 1Kg</p>
-            <h2>R$5.00</h2>
-            <div class="quantity">
-                <button >-</button>
-                <span id="quantity">0</span>
-                <button >+</button>
-                <a href="checkoutMaca.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>
-            </div>
+          <img src="img/apple.png" alt="Maçã" width="200px" />
+          <p>Maca, 1Kg</p>
+          <h2>R$5.00</h2>
+          <div class="quantity">
+            <button>-</button>
+            <span id="quantity">0</span>
+            <button>+</button>
+            <a href="checkoutMaca.html">
+              <img class="add-to-cart" src="img/iconeCesta.png" alt="cesta" />
+            </a>
+          </div>
         </div>
 
         <div class="card">
-            <img src="img/banana.png" alt="Banana" width="200px">
-            <p>Banana, 1Kg</p>
-            <h2>R$2.00</h2>
-            <div class="quantity">
-                <button >-</button>
-                <span id="quantity">0</span>
-                <button >+</button>
-                <a href="checkoutBanana.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>
-            </div>
+          <img src="img/banana.png" alt="Banana" width="200px" />
+          <p>Banana, 1Kg</p>
+          <h2>R$2.00</h2>
+          <div class="quantity">
+            <button>-</button>
+            <span id="quantity">0</span>
+            <button>+</button>
+            <a href="checkoutBanana.html">
+              <img class="add-to-cart" src="img/iconeCesta.png" alt="cesta" />
+            </a>
+          </div>
         </div>
 
         <div class="card">
-            <img src="img/kiwi.png" alt="Kiwi" width="200px">
-            <p>Kiwi, 1Kg</p>
-            <h2>R$10.99</h2>
-            <div class="quantity">
-                <button >-</button>
-                <span id="quantity">0</span>
-                <button >+</button>
-                <a href="checkoutKiwi.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>            </div>
+          <img src="img/kiwi.png" alt="Kiwi" width="200px" />
+          <p>Kiwi, 1Kg</p>
+          <h2>R$10.99</h2>
+          <div class="quantity">
+            <button>-</button>
+            <span id="quantity">0</span>
+            <button>+</button>
+            <a href="checkoutKiwi.html">
+              <img class="add-to-cart" src="img/iconeCesta.png" alt="cesta" />
+            </a>
+          </div>
         </div>
 
         <div class="card">
-            <img src="img/orange.png" alt="Laranja" width="200px">
-            <p>Laranja, 1Kg</p>
-            <h2>R$8.99</h2>
-            <div class="quantity">
-                <button >-</button>
-                <span id="quantity">0</span>
-                <button >+</button>
-                <a href="checkoutLaranja.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>            </div>
+          <img src="img/orange.png" alt="Laranja" width="200px" />
+          <p>Laranja, 1Kg</p>
+          <h2>R$8.99</h2>
+          <div class="quantity">
+            <button>-</button>
+            <span id="quantity">0</span>
+            <button>+</button>
+            <a href="checkoutLaranja.html">
+              <img class="add-to-cart" src="img/iconeCesta.png" alt="cesta" />
+            </a>
+          </div>
         </div>
 
         <div class="card">
-            <img src="img/mango.png" alt="Manga" width="200px">
-            <p>Manga, 1Kg</p>
-            <h2>R$5.99</h2>
-            <div class="quantity">
-                <button >-</button>
-                <span id="quantity">0</span>
-                <button >+</button>
-                <a href="checkoutManga.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>
-            </div>
+          <img src="img/mango.png" alt="Manga" width="200px" />
+          <p>Manga, 1Kg</p>
+          <h2>R$5.99</h2>
+          <div class="quantity">
+            <button>-</button>
+            <span id="quantity">0</span>
+            <button>+</button>
+            <a href="checkoutManga.html">
+              <img class="add-to-cart" src="img/iconeCesta.png" alt="cesta" />
+            </a>
+          </div>
         </div>
 
         <div class="card">
-            <img src="img/pineapple.png" alt="Abacaxi" width="200px">
-            <p>Abacaxi, 1Kg</p>
-            <h2>R$9.99</h2>
-            <div class="quantity">
-                <button >-</button>
-                <span id="quantity">0</span>
-                <button >+</button>
-                <a href="checkoutAbacaxi.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>           
-            </div>
+          <img src="img/pineapple.png" alt="Abacaxi" width="200px" />
+          <p>Abacaxi, 1Kg</p>
+          <h2>R$9.99</h2>
+          <div class="quantity">
+            <button>-</button>
+            <span id="quantity">0</span>
+            <button>+</button>
+            <a href="checkoutAbacaxi.html">
+              <img class="add-to-cart" src="img/iconeCesta.png" alt="cesta" />
+            </a>
+          </div>
         </div>
+      </div>
     </main>
-    
-    
-    <footer> 
-        <img src="img/logoFrutaWeb.png" alt="logo"/>
-            <nav> 
-                <a href="index.html">Home</a> <br>
-                <a href="menu.html">Menu</a> <br>
-                <a href="comoFunciona.html">Como Funciona </a> <br>
-                <a href="contato.html">Contato</a>
-            </nav>
-            <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
-            <img src="img/logosCartoes.png" alt="Cartões Aceitos"/>
-            <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/>
+
+    <footer>
+      <img src="img/logoFrutaWeb.png" alt="logo" />
+      <nav>
+        <a href="index.html">Home</a> <br />
+        <a href="menu.html">Menu</a> <br />
+        <a href="comoFunciona.html">Como Funciona </a> <br />
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
+      <img src="img/logosCartoes.png" alt="Cartões Aceitos" />
+      <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais" />
     </footer>
-    
-</body>
+  </body>
 </html>
