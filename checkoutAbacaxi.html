@@ -39,27 +39,62 @@
       width: 100%;
       flex: 0 0 auto;
     }
-    
-    .order .caixaInfoBox {
+    .order .caixaInfoBox input {
       align-items: center;
       justify-content: center;
+      display: flex;
+      flex-direction: column;
       gap: 10px;
-      padding: 25px 0px;
+      padding: 0 20px; /* Ajuste o padding conforme necessário */
       background-color: #ffffff;
       border-radius: 50px;
       overflow: hidden;
-      border: 2px solid;
-      border-color: #190b00;
-      display: flex;
+      border: 2px solid #190b00;
       position: relative;
       align-self: stretch;
-      width: 100%;
+      width: 540px; /* Ajuste a largura conforme necessário */
+      height: 60px; /* Ajuste a altura conforme necessário */
       flex: 0 0 auto;
+    }
+    
+    .order .caixaInfoBoxSmall input {
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 20px; /* Ajuste o padding conforme necessário */
+      flex: 1;
+      flex-grow: 1;
+      background-color: #ffffff;
+      border-radius: 50px;
+      overflow: hidden;
+      border: 2px solid #190b00;
+      display: flex;
+      position: relative;
+      width: 260px; /* Ajuste a largura conforme necessário */
+      height: 60px; /* Ajuste a altura conforme necessário */
+    }
+    
+    .order .caixaInfoBox input::after,
+    .order .caixaInfoBoxSmall input::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #190b00;
+      border-radius: 50px;
+      pointer-events: none;
     }
     
     .order .textoCaixaInfoBox {
       position: relative;
       width: fit-content;
+      align-self: center; 
+      text-align: center; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-top: -2px;
       font-family: "Inter-SemiBold", Helvetica;
       font-weight: 600;
@@ -68,7 +103,6 @@
       letter-spacing: 0;
       line-height: normal;
     }
-    
     .order .colunaBox {
       align-items: flex-start;
       gap: 20px;
@@ -77,24 +111,7 @@
       flex: 0 0 auto;
       display: flex;
       position: relative;
-    }
-    
-    .order .caixaInfoBoxSmall {
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 25px 0px;
-      flex: 1;
-      flex-grow: 1;
-      background-color: #ffffff;
-      border-radius: 50px;
-      overflow: hidden;
-      border: 2px solid;
-      border-color: #190b00;
-      display: flex;
-      position: relative;
-    }
-    
+    }   
     .order .buttomFramePedido {
       display: flex;
       flex-direction: column;
@@ -174,17 +191,17 @@
     <div class="order">
       <div class="caixaTexto1">Seus dados:</div>
       <div class="grupoInfoBox">
-        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Nome</div></div>
-        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Sobrenome</div></div>
-        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Endereço</div></div>
-        <div class="caixaInfoBox"><div class="textoCaixaInfoBox">Número do cartão</div></div>
+        <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Nome"></div>
+        <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Sobrenome"></div>
+        <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Endereço"></div>
+        <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Número do cartão"></div>
       </div>
       <div class="colunaBox">
-        <div class="caixaInfoBoxSmall"><div class="textoCaixaInfoBox">MM/YY</div></div>
-        <div class="caixaInfoBoxSmall"><div class="textoCaixaInfoBox">CVV</div></div>
+        <div class="caixaInfoBoxSmall"><input type="text" class="textoCaixaInfoBox" placeholder="MM/YY"></div>
+        <div class="caixaInfoBoxSmall"><input type="text" class="textoCaixaInfoBox" placeholder="CVV"></div>
       </div>
       <div class="buttomFramePedido">
-        <div class="sign-up"><div class="textoButtomFrame">Enviar pedido</div></div>
+        <button class="sign-up" onclick="enviarPedido()">Enviar pedido</button>
       </div>
     </div>
 
