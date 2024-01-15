@@ -144,10 +144,65 @@ nav {
 
 /* Menu--------------------------------------------*/
 .card {
-  border: 1px solid #ccc;
+  color: #190b00;
+  background-color: #fff8eb;
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
   width: 200px;
+  font-family: "Inter", sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.fruit-img {
+  width: 200px;
+  background-color: white; /* Background color for blending effect */
+  background-blend-mode: multiply;
+}
+.quantity {
+  height: 30px;
+  border-radius: 100px;
+  margin-top: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity-controlers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-to-cart {
+  height: 25px;
+  border-radius: 0px 100px 100px 0px;
+  padding: 5px 20px 0px 20px;
+  background-color: #190b00;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-to-cart img {
+  height: 20px;
+}
+
+.quantity button {
+  color: ;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
