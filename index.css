@@ -41,6 +41,7 @@ header {
     text-decoration: none;
 }
 
+
 #guiasHeader {
     width: 550px;
     display: flex;
@@ -52,6 +53,14 @@ header {
     position: absolute;
     top: 50px;
     left: 450px;
+}
+
+#guiaEscolhida {
+    color:#FF9F52;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 #logoFrutasWeb {
@@ -129,7 +138,7 @@ header {
     height: 950px;
     width: 100%;
     background-color: #FFF2D8;
-}
+   }
 
 #textoSectionMenu {
     font-size: 50px;
@@ -139,19 +148,44 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 25px;    
+    top: 50px;    
 }
 
 .card {
-    border: 1px solid #ccc;
     border-radius: 8px;
+    background-color: #ffffff;
     margin: 10px;
     padding: 10px;
-    width: 200px;
+    width: 464px;
+    height: 512px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border-radius: 50px;
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     color: #190B00;
 } 
+
+.botaoMenos, .botaoMais {
+    background-color:rgb(255, 255, 255);
+    border: none;
+}
+
+.Kiwi {
+    position: absolute;
+    right: 1100px;
+    top: 1100px;
+}
+
+.Laranja { 
+    position: absolute;
+    top: 30px;
+    left: 715px;
+}
+
+.Maca {
+    position: absolute;
+    top: 1100px;
+}
 
