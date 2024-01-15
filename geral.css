@@ -101,10 +101,8 @@ nav {
   margin-bottom: 70px;
 }
 
-.telaLogin input {
-  padding-inline-start: 16rem;
-  padding-inline-end: 16rem;
-  height: 50px;
+.telaLogin ::placeholder {
+  height: 40px;
   background-color: #ffffff;
   border-radius: 6px;
   border-style: none;
