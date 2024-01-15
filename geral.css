@@ -88,20 +88,40 @@ nav {
   background-color: #fff2d8;
 }
 
-.telaLogin {
-  text-align: center;
-  background-color: #fff2d8;
-  border-style: none;
-  border-radius: 10px;
-  width: 850px;
-  align-content: center;
-  margin: auto;
-  padding: 50px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+.caixaLogin{
+  position: relative;
 }
 
-.telaLogin ::placeholder {
+.imgMorango{
+  display: block;
+  width: 75%;
+  height: 700px;
+  margin-left: 12%;
+
+}
+
+.telaLogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF2D8;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  width: 800px;
+  height: 300px;
+}
+
+.login{
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.emailPassword{
+  font-family: "Inter", sans-serif;
   height: 40px;
   background-color: #ffffff;
   border-radius: 6px;
@@ -111,34 +131,23 @@ nav {
 .telaLogin button {
   padding-inline-start: 10rem;
   padding-inline-end: 10rem;
-  height: 40px;
+  height: 35px;
   background-color: #407536;
   border-radius: 6px;
   border-style: none;
 }
 
-.footerTeste .footer {
-  background-color: #fff2d8;
+.login-button{
+  color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
-  padding-inline-start: 400px;
-  height: 35px;
 }
 
-.footerTeste .icones {
-  width: 180px;
-  display: flex;
-  padding-inline-start: 70rem;
+.EsqueceuSenha{
+  font-family: "Inter", sans-serif;
+  color: #407536;
 }
 
-.footerTeste .redeSocial {
-  padding-inline-start: 75rem;
-}
 
-.allRights {
-  font-size: 22px;
-}
-/* Login--------------------------------------------*/
 
 /* Menu--------------------------------------------*/
 .card {

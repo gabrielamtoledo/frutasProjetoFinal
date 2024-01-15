@@ -19,37 +19,37 @@
         <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
     </header>
 
-        <!-- <img src="img/login.png" alt="login-image" width="900px"> -->
-
-
-    <div class="telaLogin">
-        <h1>Login</h1>
-        <br><br><br>
-        <input type="email" placeholder="Email" size="80">
-        <br><br>
-        <input type="password" placeholder="Senha" size="80">
-        <br><br><br>
-        <button><a class="login-button" href="index.html">Entrar</a></button>
-        <br><br><br>
-        <a href="#">Esqueceu sua senha?</a>
+    <div class="caixaLogin">
+        <img class="imgMorango" src="img/login.png" alt="login-image">
+        <div class="telaLogin">
+            <h1 class="login">Login</h1>
+            <br><br><br>
+            <input class="emailPassword" type="email" placeholder="Email" id="email" size="80">
+            <br><br>
+            <input class="emailPassword" type="password" placeholder="Senha" id="password" size="80">
+            <br><br><br>
+            <button><a class="login-button" href="index.html">Entrar</a></button>
+            <br><br><br>
+            <a class="EsqueceuSenha" href="#">Esqueceu sua senha?</a>
+        </div>
     </div>
     
-
     <footer>
-        <div class="footerTeste">
-            <nav>
-                <ul>
-                    <img class="logo" src="img/logoFrutaWeb.png" alt="logo"/>
-                    <li class="footer"><a href="index.html">Home</a></li>
-                    <li class="footer"><a href="menu.html">Menu</a></li>
-                    <li class="footer"><a href="comoFunciona.html">Como Funciona </a></li>
-                    <li class="footer"><a href="contato.html">Contato</a></li> 
-                    <li class="icones"><img src="img/logosCartoes.png" alt="Cartões Aceitos"/></li>
-                    <li class="redeSocial"><img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/></li>
-                    <li class="allRights"><p>@ 2023 FrutaWeb, Inc. All rights reserved.</p></li>
-                </ul>
-            </nav>
+        <div class="footer">
+            <ul id="guiasFooter" class="guiasFooter">
+                <li><a href="comoFunciona.html">Como Funciona</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="imagensLogoLine">
+                <img class="line" src="img/footerLine.png" />
+                <img class="logo" src="img/logoFrutaWeb.png" />
+            </div>
+            <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
+            <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
+            <img class="iconesCartoes" src="img/logosCartoes.png" />
         </div>
-    </footer>   
+    </footer>
 </body>
 </html>
