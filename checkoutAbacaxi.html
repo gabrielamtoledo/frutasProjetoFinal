@@ -45,7 +45,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      padding: 25px 0px;
+      padding: 0 20px; /* Ajuste o padding conforme necessário */
       background-color: #ffffff;
       border-radius: 50px;
       overflow: hidden;
@@ -53,43 +53,46 @@
       position: relative;
       align-self: stretch;
       width: 540px; /* Ajuste a largura conforme necessário */
-      height: 40px; /* Ajuste a altura conforme necessário */
+      height: 60px; /* Ajuste a altura conforme necessário */
       flex: 0 0 auto;
     }
+    
     .order .caixaInfoBoxSmall input {
       align-items: center;
       justify-content: center;
       gap: 10px;
-      padding: 25px 0px;
+      padding: 0 20px; /* Ajuste o padding conforme necessário */
       flex: 1;
       flex-grow: 1;
       background-color: #ffffff;
       border-radius: 50px;
       overflow: hidden;
-      border: 2px solid;
-      border-color: #190b00;
+      border: 2px solid #190b00;
       display: flex;
       position: relative;
       width: 260px; /* Ajuste a largura conforme necessário */
-      height: 40px; /* Ajuste a altura conforme necessário */
+      height: 60px; /* Ajuste a altura conforme necessário */
     }
     
     .order .caixaInfoBox input::after,
     .order .caixaInfoBoxSmall input::after {
-      content: ""; /* Adiciona um conteúdo vazio ao pseudoelemento */
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      border: 2px solid #190b00; /* Adiciona a borda personalizada */
-      border-radius: 50px; /* Adiciona bordas arredondadas, ajuste conforme necessário */
-      pointer-events: none; /* Garante que o pseudoelemento não interfira nas interações do usuário */
+      border: 2px solid #190b00;
+      border-radius: 50px;
+      pointer-events: none;
     }
+    
     .order .textoCaixaInfoBox {
       position: relative;
       width: fit-content;
-      align-items: center;
+      align-self: center; /* Centraliza horizontalmente */
+      display: flex;
+      align-items: center; /* Centraliza verticalmente */
       justify-content: center;
       margin-top: -2px;
       font-family: "Inter-SemiBold", Helvetica;
@@ -99,7 +102,6 @@
       letter-spacing: 0;
       line-height: normal;
     }
-    
     .order .colunaBox {
       align-items: flex-start;
       gap: 20px;
