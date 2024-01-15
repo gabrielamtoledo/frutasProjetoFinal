@@ -15,7 +15,7 @@
         
         .footer .guiasFooter {
             position: absolute;
-            font-family: 'Inter', sans-serif;
+            font-family: "Inter", sans-serif;
             font-weight: 400;
             color: #190b00;
             font-size: 30px;
@@ -38,10 +38,13 @@
         
         .footer #guiasFooter li {
             margin-bottom: 10px;
+        }
+        .footer #guiasFooter li a{
+            color: #190b00;
             text-decoration: none;
         }
         
-        .footer .overlap {
+        .footer .imagensLogoLine {
           position: absolute;
           width: 442px;
           height: 264px;
@@ -72,7 +75,7 @@
           width: 367px;
           top: 542px;
           left: 105px;
-          font-family: "Philosopher-Regular", Helvetica;
+          font-family: "Inter", sans-serif;
           font-weight: 400;
           color: #000000;
           font-size: 20px;
@@ -81,7 +84,7 @@
           white-space: nowrap;
         }
         
-        .footer .overlap-group {
+        .footer .grupoIcones {
           position: absolute;
           width: 210px;
           height: 45px;
@@ -89,7 +92,7 @@
           left: 1466px;
         }
         
-        .footer .group-2 {
+        .footer .iconesMidiaCartoes {
           position: absolute;
           width: 37px;
           height: 38px;
@@ -97,7 +100,7 @@
           left: 173px;
         }
         
-        .footer .img {
+        .footer .iconesMidia {
           position: absolute;
           width: 210px;
           height: 38px;
@@ -105,7 +108,7 @@
           left: 0;
         }
         
-        .footer .group-3 {
+        .footer .iconesCartoes {
           position: absolute;
           width: 370px;
           height: 141px;
@@ -194,17 +197,18 @@
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="index.html">Home</a></li>
             </ul>
-            <div class="overlap">
+            <div class="imagensLogoLine">
                 <img class="line" src="img/footerLine.png" />
                 <img class="logo" src="img/logoFrutaWeb.png" />
             </div>
-            <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
-            <div class="overlap-group">
-                <div class="group-2"></div>
-                <img class="img" src="img/iconesMidiaSocial.png" />
-            </div>
-            <img class="group-3" src="img/logosCartoes.png" />
+
+            <div class="grupoIcones">
+                <div class="iconesMidiaCartoes"></div>
+                    <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
+                    <img class="iconesCartoes" src="img/logosCartoes.png" />
+               </div>
         </div>
+        <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
     </footer>
     <!-- Estrutura para aplicação do footer com utilização do javascript
     <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
