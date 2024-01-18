@@ -9,8 +9,8 @@
     </style>
     <link rel="stylesheet" href="geral.css" />
   </head>
-  <body>
-    <header>
+  <body class="menu-body">
+    <header class="menu-header">
       <img src="img/logoFrutaWeb.png" alt="logo" />
       <a class="guiasHeader" href="index.html">Home</a>
       <a class="guiasHeader" href="menu.html">Menu</a>
@@ -21,7 +21,7 @@
       >
     </header>
 
-    <main>
+    <main class="menu-main">
       <div class="container-cards">
         <div class="card">
           <img class="fruit-img" src="img/apple.png" alt="Maçã" width="200px" />
@@ -42,7 +42,12 @@
         </div>
 
         <div class="card">
-          <img src="img/banana.png" alt="Banana" width="200px" />
+          <img
+            class="fruit-img"
+            src="img/banana.png"
+            alt="Banana"
+            width="200px"
+          />
           <p>Banana, 1Kg</p>
           <h2>R$2.00</h2>
           <div class="quantity">
@@ -60,7 +65,7 @@
         </div>
 
         <div class="card">
-          <img src="img/kiwi.png" alt="Kiwi" width="200px" />
+          <img class="fruit-img" src="img/kiwi.png" alt="Kiwi" width="200px" />
           <p>Kiwi, 1Kg</p>
           <h2>R$10.99</h2>
           <div class="quantity">
@@ -78,7 +83,12 @@
         </div>
 
         <div class="card">
-          <img src="img/orange.png" alt="Laranja" width="200px" />
+          <img
+            class="fruit-img"
+            src="img/orange.png"
+            alt="Laranja"
+            width="200px"
+          />
           <p>Laranja, 1Kg</p>
           <h2>R$8.99</h2>
           <div class="quantity">
@@ -96,7 +106,12 @@
         </div>
 
         <div class="card">
-          <img src="img/mango.png" alt="Manga" width="200px" />
+          <img
+            class="fruit-img"
+            src="img/mango.png"
+            alt="Manga"
+            width="200px"
+          />
           <p>Manga, 1Kg</p>
           <h2>R$5.99</h2>
           <div class="quantity">
@@ -114,7 +129,12 @@
         </div>
 
         <div class="card">
-          <img src="img/pineapple.png" alt="Abacaxi" width="200px" />
+          <img
+            class="fruit-img"
+            src="img/pineapple.png"
+            alt="Abacaxi"
+            width="200px"
+          />
           <p>Abacaxi, 1Kg</p>
           <h2>R$9.99</h2>
           <div class="quantity">
@@ -134,16 +154,21 @@
     </main>
 
     <footer>
-      <img src="img/logoFrutaWeb.png" alt="logo" />
-      <nav>
-        <a href="index.html">Home</a> <br />
-        <a href="menu.html">Menu</a> <br />
-        <a href="comoFunciona.html">Como Funciona </a> <br />
-        <a href="contato.html">Contato</a>
-      </nav>
-      <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
-      <img src="img/logosCartoes.png" alt="Cartões Aceitos" />
-      <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais" />
+      <div class="footer menu-footer">
+        <ul id="guiasFooter" class="guiasFooter">
+          <li><a href="comoFunciona.html">Como Funciona</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <div class="imagensLogoLine">
+          <img class="line" src="img/footerLine.png" />
+          <img class="logo" src="img/logoFrutaWeb.png" />
+        </div>
+        <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
+        <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
+        <img class="iconesCartoes" src="img/logosCartoes.png" />
+      </div>
     </footer>
   </body>
 </html>
