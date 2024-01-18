@@ -88,16 +88,15 @@ nav {
   background-color: #fff2d8;
 }
 
-.caixaLogin{
+.caixaLogin {
   position: relative;
 }
 
-.imgMorango{
+.imgMorango {
   display: block;
   width: 75%;
   height: 700px;
   margin-left: 12%;
-
 }
 
 .telaLogin {
@@ -105,22 +104,22 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #FFF2D8;
+  background-color: #fff2d8;
   padding: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 800px;
   height: 300px;
 }
 
-.login{
+.login {
   font-family: "Inter", sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
 
-.emailPassword{
+.emailPassword {
   font-family: "Inter", sans-serif;
   height: 40px;
   background-color: #ffffff;
@@ -137,17 +136,15 @@ nav {
   border-style: none;
 }
 
-.login-button{
+.login-button {
   color: #ffffff;
   font-family: "Inter", sans-serif;
 }
 
-.EsqueceuSenha{
+.EsqueceuSenha {
   font-family: "Inter", sans-serif;
   color: #407536;
 }
-
-
 
 /* Menu--------------------------------------------*/
 .card {
@@ -166,8 +163,7 @@ nav {
 }
 .fruit-img {
   width: 200px;
-  background-color: white; /* Background color for blending effect */
-  background-blend-mode: multiply;
+  mix-blend-mode: darken;
 }
 .quantity {
   height: 30px;
@@ -216,104 +212,108 @@ nav {
 
 /* Footer--------------------------------------------*/
 .footer {
-    position: relative;
-    width: 100%;
-    height: 594px;
-    background-color: #fff2d8;
-  }
-    
+  position: relative;
+  width: 100%;
+  height: 594px;
+  background-color: #fff2d8;
+}
+
 .footer .guiasFooter {
-    position: absolute;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #190b00;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
-    width: 232px;
-    height: 202px;
-    top: 189px;
-    left: 580px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #190b00;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 232px;
+  height: 202px;
+  top: 189px;
+  left: 580px;
 }
-    
+
 .footer #guiasFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
-    list-style: none;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  list-style: none;
+  margin: 0;
 }
-    
+
 .footer #guiasFooter li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-.footer #guiasFooter li a{
-    color: #190b00;
-    text-decoration: none;
+.footer #guiasFooter li a {
+  color: #190b00;
+  text-decoration: none;
 }
 
 .footer .imagensLogoLine {
-    position: absolute;
-    width: 442px;
-    height: 264px;
-    top: 162px;
-    left: 138px;
+  position: absolute;
+  width: 442px;
+  height: 264px;
+  top: 162px;
+  left: 138px;
 }
-    
+
 .footer .line {
-    position: absolute;
-    width: 1px;
-    height: 264px;
-    top: 0;
-    left: 365px;
-    object-fit: cover;
+  position: absolute;
+  width: 1px;
+  height: 264px;
+  top: 0;
+  left: 365px;
+  object-fit: cover;
 }
 
 .footer .logo {
-    position: absolute;
-    width: 442px;
-    height: 177px;
-    top: 39px;
-    left: 0;
-    object-fit: cover;
+  position: absolute;
+  width: 442px;
+  height: 177px;
+  top: 39px;
+  left: 0;
+  object-fit: cover;
 }
-    
+
 .footer .p {
-    position: absolute;
-    width: 367px;
-    top: 542px;
-    left: 105px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-}        
+  position: absolute;
+  width: 367px;
+  top: 542px;
+  left: 105px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
 .footer .iconesMidiaCartoes {
-    position: absolute;
-    width: 37px;
-    height: 38px;
-    top: 7px;
-    left: 173px;
+  position: absolute;
+  width: 37px;
+  height: 38px;
+  top: 7px;
+  left: 173px;
 }
 .footer .iconesMidia {
-    position: absolute;
-    width: 210px;
-    height: 38px;
-    top: 515px;
-    right: 70px; /* Defina a margem desejada do canto direito */
-    object-fit: cover;
-    max-width: calc(100% - 20px); /* Garante que a largura máxima seja 100% - a margem */
+  position: absolute;
+  width: 210px;
+  height: 38px;
+  top: 515px;
+  right: 70px; /* Defina a margem desejada do canto direito */
+  object-fit: cover;
+  max-width: calc(
+    100% - 20px
+  ); /* Garante que a largura máxima seja 100% - a margem */
 }
 .footer .iconesCartoes {
-    position: absolute;
-    width: 370px;
-    height: 141px;
-    top: 212px;
-    right: 20px;
-    object-fit: cover;
-    max-width: calc(100% - 20px); /* Garante que a largura máxima seja 100% - a margem */
+  position: absolute;
+  width: 370px;
+  height: 141px;
+  top: 212px;
+  right: 20px;
+  object-fit: cover;
+  max-width: calc(
+    100% - 20px
+  ); /* Garante que a largura máxima seja 100% - a margem */
 }
