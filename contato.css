@@ -1,0 +1,60 @@
+.envieMenssagem{
+    background-image: url("contato_BG.png");
+    background-color: green;
+}
+
+
+
+
+.telaMenssagem{
+    font-family: "Inter", sans-serif;
+    background-color: rgb(255, 171, 234);
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff2d8;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 800px;
+    height: 300px;
+}
+
+
+
+
+.textCard {
+    font-family: "Inter", sans-serif;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.submitButton {
+    padding-inline-start: 10rem;
+    padding-inline-end: 10rem;
+    height: 35px;
+    background-color: #407536;
+    border-radius: 6px;
+    border-style: none;
+}
+
+
+
+.imgContato {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+.footer{
+    background-color: bisque;
+}

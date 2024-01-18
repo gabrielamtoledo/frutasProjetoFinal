@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <style> 
+    <link rel="stylesheet" href="contato.css">
+    <!-- <style> 
     main {
         background-image: url(img/contato_BG.png); 
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat; 
-    }</style>
+    }</style> -->
 </head>
 <body>
     <header>
@@ -21,13 +22,28 @@
             <li><a class="guiasHeader" href="comoFunciona.html">Como Funciona </a></li>
             <li><a class="guiasHeader" href="contato.html">Contato</a></li>
         </ul>
-        <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
+        <img id="addToCart" src="img/iconeCesta.png" alt="carrinho"/><a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
     </header>
+
+    <div class="envieMenssagem">
+        <img class="imgContato" src="img/contato_BG.png" alt="imgContato">
+        <div class="telaMenssagem">
+        <h1>Nos envie uma mensagem!</h1>
+        <form action="#" method="post">
+            <input class="textCard" type="text" id="name" name="name" placeholder="Nome" required>
+            <br><br>
+            <input class="textCard" type="email" id="email" name="email" placeholder="Email" required>
+            <br><br>
+            <textarea class="textCard" id="message" name="message" rows="10" placeholder="O que tem a nos falar?" required></textarea>
+            <br><br>
+            <button class="submitButton" type="submit" class="button" formaction="mensagemSucesso.html">Submit</button>
+        </form>
+    </div>
     
-    <main>
+    
+    <!-- <main>
         <div>
         <h1>Nos envie uma mensagem!</h1>
-
     <form action="#" method="post">
         <input type="text" id="name" name="name" placeholder="Nome" required> <br>
 
@@ -38,20 +54,32 @@
         <button type="submit" class="button" formaction="mensagemSucesso.html">Submit</button>
     </form>
         </div>
-    </main>
+    </main> -->
     
-    <footer> 
-        <img src="img/logoFrutaWeb.png" alt="logo"/>
-            <nav> 
-                <a href="index.html">Home</a> <br>
-                <a href="menu.html">Menu</a> <br>
-                <a href="comoFunciona.html">Como Funciona </a> <br>
-                <a href="contato.html">Contato</a>
-            </nav>
-            <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
-            <img src="img/logosCartoes.png" alt="Cartões Aceitos"/>
-            <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/>
-    </footer>
-    
+
+
+
+    <!-- footer temporário -->
+        <footer> 
+            <div class="footer">
+            <img src="img/logoFrutaWeb.png" alt="logo"/>
+                <nav> 
+                    <a href="index.html">Home</a> <br>
+                    <a href="menu.html">Menu</a> <br>
+                    <a href="comoFunciona.html">Como Funciona </a> <br>
+                    <a href="contato.html">Contato</a>
+                </nav>
+                <div>@ 2023 FrutaWeb, Inc. All rights reserved.</div>
+                <img src="img/logosCartoes.png" alt="Cartões Aceitos"/>
+                <img src="img/iconesMidiaSocial.png" alt="Mídias Sociais"/>
+            </div>
+        </footer>
+    <!-- footer temporário -->
+
+
+
+
+
+
 </body>
 </html>
