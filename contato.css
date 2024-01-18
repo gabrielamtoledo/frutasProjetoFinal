@@ -5,8 +5,8 @@
 
 .telaMenssagem{
     font-family: "Inter", sans-serif;
-    background-color: rgb(255, 171, 234);
-    position: relative;
+    font-size: smaller;
+    background-color: transparent;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -14,21 +14,23 @@
     padding: 50px;
     text-align: center;
     width: 800px;
-    height: 300px;
+    height: 350px;
 }
 
 .textCard {
+    padding-inline-start: 2%;
+    padding-inline-end: 50%;
     font-family: "Inter", sans-serif;
-    height: 40px;
+    height: 60px;
     background-color: #FFFFFF;
-    border-radius: 100px;
-    /* border-style: none; */
+    border-radius: 30px;
 }
 
 .telaMenssagem Button {
+    font-size: medium;
     padding-inline-start: 50px;
     padding-inline-end: 50px;
-    height: 35px;
+    height: 50px;
     background-color: #407536;
     border-radius: 100px;
     border-style: none;
