@@ -30,14 +30,15 @@
     font-size: medium;
     padding-inline-start: 50px;
     padding-inline-end: 50px;
-    height: 50px;
+    height: 70px;
     background-color: #407536;
     border-radius: 100px;
     border-style: none;
 }
 
 .enviarButton{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
     color: #FFFFFF;
 }
 
