@@ -147,6 +147,29 @@ nav {
 }
 
 /* Menu--------------------------------------------*/
+.menu-body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 1fr 40% 1fr;
+}
+
+.menu-main {
+  grid-area: main;
+}
+.menu-footer {
+  grid-area: footer;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .card {
   color: #190b00;
   background-color: #fff8eb;
@@ -204,10 +227,6 @@ nav {
   font-size: inherit;
   font-weight: bold;
   cursor: pointer;
-}
-.container-cards {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* Footer--------------------------------------------*/
