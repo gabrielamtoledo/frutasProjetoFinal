@@ -41,7 +41,6 @@ header {
     text-decoration: none;
 }
 
-
 #guiasHeader {
     width: 550px;
     display: flex;
@@ -60,7 +59,9 @@ header {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #FF9F52;
+    text-decoration-thickness: 4px;
 }
 
 #logoFrutasWeb {
@@ -151,41 +152,143 @@ header {
     top: 50px;    
 }
 
-.card {
-    border-radius: 8px;
-    background-color: #ffffff;
-    margin: 10px;
-    padding: 10px;
-    width: 464px;
-    height: 512px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 50px;
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    color: #190B00;
-} 
+.container-cards {
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 1300px;
+}
 
 .botaoMenos, .botaoMais {
     background-color:rgb(255, 255, 255);
     border: none;
 }
 
-.Kiwi {
-    position: absolute;
-    right: 1100px;
-    top: 1100px;
+.fruit-img {
+    width: 300px;
+    background-color: white; 
+    background-blend-mode: multiply;
+}
+.textoFruta{
+    position:relative;
+    top:15px
+}
+ 
+.quantity {
+    height: 30px;
+    border-radius: 100px;
+    margin-top: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50px
+}
+.quantity-controlers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.add-to-cart {
+    height: 25px;
+    border-radius: 0px 100px 100px 0px;
+    padding: 5px 20px 0px 20px;
+    background-color: #190b00;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-to-cart img {
+    height: 20px;
+}
+.quantity button {
+    color: none ;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.Laranja { 
-    position: absolute;
-    top: 30px;
-    left: 715px;
+.card {
+    border-radius: 50px;
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #190B00;
+    margin: 25px;
+} 
+
+#setaEsq {
+    position:absolute;
+    left:0px;
+    top:1300px;
 }
 
-.Maca {
-    position: absolute;
-    top: 1100px;
+#setaDir {
+    position:absolute;
+    right:0px;
+    top:1300px;
 }
 
+#botaoVerMais {
+    background-color: #407536;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    height: 144px;
+    width: 467px;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    left:100px;
+    top:200px
+}
+
+.info { 
+    height: 1618px;
+    background-color: white;
+    position:relative;
+    z-index: 1;
+    width: 800px;
+    height: 902px;
+    color:#190b00;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#infoText {
+    position: relative;
+    top: 100px;
+    left:100px;
+}
+#imgInfoKiwi{
+    height: 300px;
+    width: auto;
+    position:absolute;
+    right:0px;
+    top:50px;
+    z-index: -1;
+}
+
+#diferenciais {
+    background-color: #FFF2D8;
+}

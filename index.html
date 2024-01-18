@@ -26,80 +26,112 @@
 
     <section id="menuIndex">
         <div id="textoSectionMenu">Escolha as frutas que deseja adicionar ao carrinho</div>
-        <div class="card Kiwi">
-            <img src="img/kiwi.png" alt="Kiwi" width="200px">
-            <p>Kiwi, 1Kg</p>
-            <h2>R$10.99</h2>
-            <div class="quantity">
-                <button class="botaoMenos"> <img  src="img/iconMinus.png" alt="menos"></button>
-                <span id="quantity">0</span>
-                <button class="botaoMais"><img  src="img/iconPlus.png" alt="mais"></button>
-                <a href="checkoutKiwi.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>   
-        </div>
-
-        <div class="card Laranja">
-            <img src="img/orange.png" alt="laranja"width="200px">
-            <p>Laranja, 1kg</p>
-            <h2>R$8,99</h2>
-            <div class="quantity">
-                <button class="botaoMenos"> <img  src="img/iconMinus.png" alt="menos"></button>
-                <span id="quantity">0</span>
-                <button class="botaoMais"><img  src="img/iconPlus.png" alt="mais"></button>
-                <a href="checkoutKiwi.html">
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>            </div>
-        </div>
-
-        <article class="card Maca">
-            <img src="img/apple.png" alt="maçã"/> 
-            <div>Maçã, 1kg R$6,99</div>
-            <div class="quantity">
-                <button class="botaoMenos"> <img  src="img/iconMinus.png" alt="menos"></button>
-                <span id="quantity">0</span>
-                <button class="botaoMais"><img  src="img/iconPlus.png" alt="mais"></button>
-                <a href="checkoutMaca.html"> 
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
-                </a>
+        <div class="container-cards">
+          <div class="card">
+            <img class="fruit-img" src="img/kiwi.png" alt="Kiwi" width="200px" />
+            <div class="textoFruta">
+              <p>Kiwi, 1Kg</p>
+              <h2>R$10.99</h2>
             </div>
-        </article>
-
-        <article class="card Banana"> <img src="img/banana.png" alt="banana"/> 
-            <div>Banana, 1kg</div> <br> <div class="preco"> R$ 7,99</div>
             <div class="quantity">
-                <button class="botaoMenos"> <img  src="img/iconMinus.png" alt="menos"></button>
+              <div class="quantity-controlers">
+                <button>-</button>
                 <span id="quantity">0</span>
-                <button class="botaoMais"><img  src="img/iconPlus.png" alt="mais"></button>
-                <a href="checkoutbanana.html"> 
-                    <img  class="add-to-cart" src="img/iconeCesta.png" alt="cesta">
+                <button>+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutKiwi.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
                 </a>
+              </div>
             </div>
-        </article>
+          </div>
 
-        <a href="menu.html"><button>Ver mais</button></a>
+          <div class="card">
+            <img class="fruit-img" src="img/orange.png" alt="Laranja" width="200px" />
+            <div class="textoFruta">
+              <p>Laranja, 1Kg</p>
+              <h2>R$8.99</h2>
+            </div>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button>-</button>
+                <span id="quantity">0</span>
+                <button>+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutLaranja.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>  
+                       
+            <div class="card">
+              <img class="fruit-img" src="img/apple.png" alt="Maçã" width="200px" />
+              <div class="textoFruta">
+                <p>Maçã, 1Kg</p>
+                <h2>R$6.99</h2>
+              </div>
+              <div class="quantity">
+                <div class="quantity-controlers">
+                  <button>-</button>
+                  <span id="quantity">0</span>
+                  <button>+</button>
+                </div>
+                <div class="add-to-cart">
+                  <a href="checkoutMaca.html">
+                    <img src="img/iconBasket.png" alt="cesta" />
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card">
+              <img class="fruit-img" src="img/banana.png" alt="Banana" width="200px" />
+              <div class="textoFruta">
+                <p>Banana, 1Kg</p>
+                <h2>R$7.99</h2>
+              </div>
+              <div class="quantity">
+                <div class="quantity-controlers">
+                  <button>-</button>
+                  <span id="quantity">0</span>
+                  <button>+</button>
+                </div>
+                <div class="add-to-cart">
+                  <a href="checkoutBanana.html">
+                    <img src="img/iconBasket.png" alt="cesta" />
+                  </a>
+                </div>
+              </div>
+            </div>
+      </div>          
+      
+        <a href="menu.html"><button id="botaoVerMais">Ver mais</button></a>
 
-        <img src="img/iconArrowLeft.png" alt="seta esquerda"/> 
-        <img src="img/iconArrowRight.png" alt="seta direita"/> 
+        <img id="setaEsq" src="img/iconArrowLeft.png" alt="seta esquerda"/> 
+        <img id="setaDir" src="img/iconArrowRight.png" alt="seta direita"/> 
     </section>
 
-    <section>
-        <p> <b>Variedade Exclusiva:</b> Descubra frutas únicas e sazonais não disponíveis nos mercados tradicionais. <br>
+    <section class="info">
+        <p id="infoText"> 
+           <b>Variedade Exclusiva:</b> Descubra frutas únicas e sazonais não disponíveis nos mercados tradicionais. <br>
 
            <b>Comércio Transparente:</b> Origem e métodos de cultivo transparentes para uma escolha consciente.<br>
             
            <b>Praticidade Online:</b> Faça suas compras sem sair de casa, com entrega direta em sua porta.<br>
             
-            <b>Apoio aos Produtores Locais:</b> Contribua para a economia regional e fortaleça a agricultura local.
+           <b>Apoio aos Produtores Locais:</b> Contribua para a economia regional e fortaleça a agricultura local.
         </p>
         <a href="menu.html"><button>Compre agora</button></a>
-        <img src="img/kiwi.png" alt="kiwi"/> 
-        <img src="img/apple.png" alt="maça"/> 
-        <img src="img/strawberry.png" alt="morango"/> 
-        <img src="img/banana.png" alt="banana"/> 
+        <img id= imgInfoKiwi src="img/kiwi.png" alt="kiwi"/> 
+        <img id= imgInfoMaca src="img/apple.png" alt="maça"/> 
+        <img id= imgInfoMorango src="img/strawberry.png" alt="morango"/> 
+        <img id= imgInfoMorango src="img/banana.png" alt="banana"/> 
     </section>
 
-    <section>
+    <section id="diferenciais">
         <h1>Nossos diferenciais</h1>
         <table border="1">
             <tr>
