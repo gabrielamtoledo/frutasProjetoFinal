@@ -155,7 +155,9 @@ nav {
     "footer";
   grid-template-rows: 1fr 40% 1fr;
 }
-
+.menu-header {
+  grid-area: header;
+}
 .menu-main {
   grid-area: main;
 }
@@ -229,6 +231,37 @@ nav {
   cursor: pointer;
 }
 
+/* Mensagem Sucesso--------------------------------------------*/
+.msgSucesso-body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 1fr 80% 1fr;
+}
+.menu-header {
+  grid-area: header;
+}
+.msgSucesso-main {
+  grid-area: main;
+  background-image: url(img/contato_BG.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-footer {
+  grid-area: footer;
+}
+.msgSucesso-body {
+}
+.msgSucesso-main {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
 /* Footer--------------------------------------------*/
 .footer {
   position: relative;
