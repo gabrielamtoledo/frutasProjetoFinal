@@ -125,9 +125,9 @@ header {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    height: 80px;
-    width: 260px;
+    font-size: 40px;
+    height: 144px;
+    width: 467px;
     border-radius: 100px;
     border: none;
     position: absolute;
@@ -263,12 +263,10 @@ header {
 }
 
 .info { 
-    height: 1618px;
+    height: 1300px;
     background-color: white;
     position:relative;
     z-index: 1;
-    width: 800px;
-    height: 902px;
     color:#190b00;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
@@ -276,17 +274,63 @@ header {
 }
 
 #infoText {
+    width: 800px;
+    height: 902px;
     position: relative;
-    top: 100px;
+    top: 150px;
     left:100px;
 }
 #imgInfoKiwi{
-    height: 300px;
+    height: 350px;
     width: auto;
     position:absolute;
     right:0px;
-    top:50px;
+    top:0px;
     z-index: -1;
+}
+
+#imgInfoMaca{
+transform: rotateX('22deg');
+height: 500px;
+width: auto;
+position:absolute;
+right:100px;
+top:250px;
+z-index: -1;
+}
+
+#imgInfoMorango{
+transform: rotateY('22deg');
+height: 300px;
+width: auto;
+position:absolute;
+right: -4px;
+top:700px;
+z-index: -1;
+}
+
+#imgInfoBanana{
+height: 250px;
+width: auto;
+position:absolute;
+right: 100px;
+bottom:0px;
+z-index: -1;
+}
+
+#botaoCompreAgoraInfo {
+    background-color: #407536;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    height: 144px;
+    width: 467px;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    left:100px;
+    top:150px
 }
 
 #diferenciais {
