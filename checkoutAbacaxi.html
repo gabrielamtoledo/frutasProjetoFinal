@@ -1,230 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="geral.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="geral.css" />
     <style>
-    .order {
-      display: flex;
-      flex-direction: column;
-      width: 720px;
-      height: 764px;
-      align-items: flex-start;
-      gap: 40px;
-      padding: 30px 90px;
-      position: relative;
-    }
-    
-    .order .caixaTexto1 {
-      position: relative;
-      width: fit-content;
-      margin-top: -1px;
-      font-family: "Inter-SemiBold", Helvetica;
-      font-weight: 600;
-      color: #190b00;
-      font-size: 36px;
-      letter-spacing: 0;
-      line-height: 30px;
-      white-space: nowrap;
-    }
-    
-    .order .grupoInfoBox {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-    }
-    .order .caixaInfoBox input {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 0 20px; /* Ajuste o padding conforme necessário */
-      background-color: #ffffff;
-      border-radius: 50px;
-      overflow: hidden;
-      border: 2px solid #190b00;
-      position: relative;
-      align-self: stretch;
-      width: 540px; /* Ajuste a largura conforme necessário */
-      height: 60px; /* Ajuste a altura conforme necessário */
-      flex: 0 0 auto;
-    }
-    
-    .order .caixaInfoBoxSmall input {
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 0 20px; /* Ajuste o padding conforme necessário */
-      flex: 1;
-      flex-grow: 1;
-      background-color: #ffffff;
-      border-radius: 50px;
-      overflow: hidden;
-      border: 2px solid #190b00;
-      display: flex;
-      position: relative;
-      width: 260px; /* Ajuste a largura conforme necessário */
-      height: 60px; /* Ajuste a altura conforme necessário */
-    }
-    
-    .order .caixaInfoBox input::after,
-    .order .caixaInfoBoxSmall input::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border: 2px solid #190b00;
-      border-radius: 50px;
-      pointer-events: none;
-    }
-    
-    .order .textoCaixaInfoBox {
-      position: relative;
-      width: fit-content;
-      align-self: center; 
-      text-align: center; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: -2px;
-      font-family: "Inter-SemiBold", Helvetica;
-      font-weight: 600;
-      color: #dadada;
-      font-size: 24px;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    .order .colunaBox {
-      align-items: flex-start;
-      gap: 20px;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-      display: flex;
-      position: relative;
-    }   
-    .order .buttomFramePedido {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-    }
-    
-    .order .sign-up {
-      display: inline-flex;
-      height: 79px;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 0px 75px;
-      position: relative;
-      background-color: #407536;
-      border-radius: 100px;
-    }
-    
-    .order .textoButtomFrame {
-      position: relative;
-      width: fit-content;
-      font-family: "Inter-SemiBold", Helvetica;
-      font-weight: 600;
-      color: #ffffff;
-      font-size: 40px;
-      letter-spacing: 0;
-      line-height: normal;
-      white-space: nowrap;
-    }
-        
+      .order {
+        display: flex;
+        flex-direction: column;
+        width: 720px;
+        height: 764px;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 30px 90px;
+        position: relative;
+      }
+
+      .order .caixaTexto1 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #190b00;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+
+      .order .grupoInfoBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        position: relative;
+        align-self: stretch;
+        width: 100%;
+        flex: 0 0 auto;
+      }
+      .order .caixaInfoBox input {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px; /* Ajuste o padding conforme necessário */
+        background-color: #ffffff;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 2px solid #190b00;
+        position: relative;
+        align-self: stretch;
+        width: 540px; /* Ajuste a largura conforme necessário */
+        height: 60px; /* Ajuste a altura conforme necessário */
+        flex: 0 0 auto;
+      }
+
+      .order .caixaInfoBoxSmall input {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 20px; /* Ajuste o padding conforme necessário */
+        flex: 1;
+        flex-grow: 1;
+        background-color: #ffffff;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 2px solid #190b00;
+        display: flex;
+        position: relative;
+        width: 260px; /* Ajuste a largura conforme necessário */
+        height: 60px; /* Ajuste a altura conforme necessário */
+      }
+
+      .order .caixaInfoBox input::after,
+      .order .caixaInfoBoxSmall input::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #190b00;
+        border-radius: 50px;
+        pointer-events: none;
+      }
+
+      .order .textoCaixaInfoBox {
+        position: relative;
+        width: fit-content;
+        align-self: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2px;
+        font-family: "Inter-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #dadada;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      .order .colunaBox {
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+        width: 100%;
+        flex: 0 0 auto;
+        display: flex;
+        position: relative;
+      }
+      .order .buttomFramePedido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        align-self: stretch;
+        width: 100%;
+        flex: 0 0 auto;
+      }
+
+      .order .sign-up {
+        display: inline-flex;
+        height: 79px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 75px;
+        position: relative;
+        background-color: #407536;
+        border-radius: 100px;
+      }
+
+      .order .textoButtomFrame {
+        position: relative;
+        width: fit-content;
+        font-family: "Inter-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 40px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
     </style>
     <title>Checkout</title>
-</head>
-<!-- Estrutura para uso do header para uso com javascript
+  </head>
+  <!-- Estrutura para uso do header para uso com javascript
 <body style="width: 100vw; height: 100vh; margin: 0;">
     <iframe src="header.html" style="width:100%; height:200px" frameborder="0"></iframe> -->
-<body>
-  <header>
+  <body>
+    <header>
       <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
       <ul id="guiasHeader">
-          <li><a class="guiasHeader" href="index.html">Home</a> </li>
-          <li><a class="guiasHeader" href="menu.html">Menu</a></li>
-          <li><a class="guiasHeader" href="comoFunciona.html">Como Funciona </a></li>
-          <li><a class="guiasHeader" href="contato.html">Contato</a></li>
+        <li><a class="guiasHeader" href="index.html">Home</a></li>
+        <li><a class="guiasHeader" href="menu.html">Menu</a></li>
+        <li>
+          <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
+        </li>
+        <li><a class="guiasHeader" href="contato.html">Contato</a></li>
       </ul>
-      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
-  </header>
-
-      <article>
+      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a
+        href="login.html"
+        ><button id="botaoAreaProdutor">Área do produtor</button></a
+      >
+    </header>
+    <main class="checkout-main">
+      <section class="checkout-produto">
+        <article>
           <p>Seu carrinho:</p>
-          <div>
-              <img src="img/pineapple.png" alt="Abacaxi" />
-              <div>
-                  <p>R$9.99</p>
-                  <p>Abacaxi, 1 kg</p>
+          <div class="card">
+            <img
+              class="fruit-img"
+              src="img/pineapple.png"
+              alt="Abacaxi"
+              width="200px"
+            />
+            <p>Abacaxi, 1Kg</p>
+            <h2>R$9.99</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button>-</button>
+                <span id="quantity">0</span>
+                <button>+</button>
               </div>
+              <div class="add-to-cart">
+                <a href="checkoutAbacaxi.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="quantity">
-              <button class="decrease-quantity"><img src="img/iconMinus.png" alt="Diminuir" /></button>
-              <span id="quantity">1</span>
-              <button class="increase-quantity"><img src="img/iconPlus.png" alt="Aumentar" /></button>
-              <button class="add-to-cart"><img src="img/iconBasket.png" alt="AddCesta" /></button>
+        </article>
+        <article class="checkout-totalprice">
+          <br />
+          <p>Total</p>
+          <br />
+          <div class="checkout-valueprice">
+            <h1>R$9.99</h1>
           </div>
-      </article>
-      <article>
-              <h1>Total</h1>
-              <p>R$9.99</p>
-      </article>
-  </section>
+        </article>
+      </section>
 
-  <div class="order">
-    <div class="caixaTexto1">Seus dados:</div>
-    <div class="grupoInfoBox">
-      <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Nome"></div>
-      <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Sobrenome"></div>
-      <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Endereço"></div>
-      <div class="caixaInfoBox"><input type="text" class="textoCaixaInfoBox" placeholder="Número do cartão"></div>
-    </div>
-    <div class="colunaBox">
-      <div class="caixaInfoBoxSmall"><input type="text" class="textoCaixaInfoBox" placeholder="MM/YY"></div>
-      <div class="caixaInfoBoxSmall"><input type="text" class="textoCaixaInfoBox" placeholder="CVV"></div>
-    </div>
-    <div class="buttomFramePedido">
-      <button class="sign-up" onclick="enviarPedido()">Enviar pedido</button>
-    </div>
-  </div>
-
-    
-  <footer>
-      <div class="footer">
-          <ul id="guiasFooter" class="guiasFooter">
-              <li><a href="comoFunciona.html">Como Funciona</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li><a href="index.html">Home</a></li>
-          </ul>
-          <div class="imagensLogoLine">
-              <img class="line" src="img/footerLine.png" />
-              <img class="logo" src="img/logoFrutaWeb.png" />
+      <div class="order">
+        <div class="caixaTexto1">Seus dados:</div>
+        <div class="grupoInfoBox">
+          <div class="caixaInfoBox">
+            <input type="text" class="textoCaixaInfoBox" placeholder="Nome" />
           </div>
-          <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
-                  <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
-                  <img class="iconesCartoes" src="img/logosCartoes.png" />
+          <div class="caixaInfoBox">
+            <input
+              type="text"
+              class="textoCaixaInfoBox"
+              placeholder="Sobrenome"
+            />
+          </div>
+          <div class="caixaInfoBox">
+            <input
+              type="text"
+              class="textoCaixaInfoBox"
+              placeholder="Endereço"
+            />
+          </div>
+          <div class="caixaInfoBox">
+            <input
+              type="text"
+              class="textoCaixaInfoBox"
+              placeholder="Número do cartão"
+            />
+          </div>
+        </div>
+        <div class="colunaBox">
+          <div class="caixaInfoBoxSmall">
+            <input type="text" class="textoCaixaInfoBox" placeholder="MM/YY" />
+          </div>
+          <div class="caixaInfoBoxSmall">
+            <input type="text" class="textoCaixaInfoBox" placeholder="CVV" />
+          </div>
+        </div>
+        <div class="buttomFramePedido">
+          <button class="sign-up" onclick="enviarPedido()">
+            Enviar pedido
+          </button>
+        </div>
       </div>
-  </footer>
+    </main>
+    <footer>
+      <div class="footer">
+        <ul id="guiasFooter" class="guiasFooter">
+          <li><a href="comoFunciona.html">Como Funciona</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <div class="imagensLogoLine">
+          <img class="line" src="img/footerLine.png" />
+          <img class="logo" src="img/logoFrutaWeb.png" />
+        </div>
+        <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
+        <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
+        <img class="iconesCartoes" src="img/logosCartoes.png" />
+      </div>
+    </footer>
     <!-- Estrutura para aplicação do footer com utilização do javascript
     <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
     -->
-</body>
+  </body>
 </html>
