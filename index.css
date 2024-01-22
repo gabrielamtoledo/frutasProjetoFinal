@@ -335,6 +335,44 @@ z-index: -1;
 
 #diferenciais {
     background-color: #FFF2D8;
+    height: 1479px;
+
+}
+
+#textoDiferenciais{
+    color:#190b00;
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    width: 570px;
+    position:relative;
+    top:400px;
+    left:86px
+
+}
+
+table{
+    border: 2px solid #190B00;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    width:910px;
+    position: relative;
+    left: 600px;
+    top:04px;
+}
+
+
+th, td {
+    border: 2px solid  #190B00;
+    padding: 12px; 
+    text-align: left;
+}
+
+
+.column1{
+    width:465px;
 }
 
 .footer {
