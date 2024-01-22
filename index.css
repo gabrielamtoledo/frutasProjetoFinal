@@ -336,3 +336,111 @@ z-index: -1;
 #diferenciais {
     background-color: #FFF2D8;
 }
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 594px;
+    background-color: #fff2d8;
+}
+  
+.footer .guiasFooter {
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #190b00;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 232px;
+    height: 202px;
+    top: 189px;
+    left: 580px;
+}
+  
+.footer #guiasFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    list-style: none;
+    margin: 0;
+}
+  
+.footer #guiasFooter li {
+    margin-bottom: 10px;
+}
+.footer #guiasFooter li a {
+    color: #190b00;
+    text-decoration: none;
+}
+  
+.footer .imagensLogoLine {
+    position: absolute;
+    width: 442px;
+    height: 264px;
+    top: 162px;
+    left: 138px;
+}
+  
+.footer .line {
+    position: absolute;
+    width: 1px;
+    height: 264px;
+    top: 0;
+    left: 365px;
+    object-fit: cover;
+}
+  
+.footer .logo {
+    position: absolute;
+    width: 442px;
+    height: 177px;
+    top: 39px;
+    left: 0;
+    object-fit: cover;
+}
+  
+.footer .p {
+    position: absolute;
+    width: 367px;
+    top: 542px;
+    left: 105px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.footer .iconesMidiaCartoes {
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    top: 7px;
+    left: 173px;
+}
+.footer .iconesMidia {
+    position: absolute;
+    width: 210px;
+    height: 38px;
+    top: 515px;
+    right: 70px; /* Defina a margem desejada do canto direito */
+    object-fit: cover;
+    max-width: calc(
+      100% - 20px
+    ); /* Garante que a largura máxima seja 100% - a margem */
+}
+.footer .iconesCartoes {
+    position: absolute;
+    width: 370px;
+    height: 141px;
+    top: 212px;
+    right: 20px;
+    object-fit: cover;
+    max-width: calc(
+      100% - 20px
+    ); /* Garante que a largura máxima seja 100% - a margem */
+}
+  
