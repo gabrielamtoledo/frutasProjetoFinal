@@ -1,0 +1,29 @@
+.comoFunciona{
+    background-color: FFFFFF;
+    height: 600px;
+
+}
+
+.título{
+    
+}
+
+.texto{
+
+}
+
+button{ 
+    font-size: medium;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FA6662;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    height: 80px;
+    border-radius: 100px;
+    border-style: none;
+}
+
+.img{
+    size: 20px;
+}
