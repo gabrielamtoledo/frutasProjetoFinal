@@ -1,18 +1,22 @@
 .comoFunciona{
+    font-family: "Inter", sans-serif;
     background-color: FFFFFF;
     height: 600px;
+    padding: 100px;
+    width: 50%;
 
 }
 
-.título{
-    
+p{
+    width: 800px;
+    height: 100px;
+    position: relative;
+
+
 }
 
-.texto{
 
-}
-
-button{ 
+.compreButton{ 
     font-size: medium;
     font-weight: bold;
     color: #FFFFFF;
@@ -24,6 +28,8 @@ button{
     border-style: none;
 }
 
-.img{
-    size: 20px;
+.kiwiImg{
+    margin-left: 66%;
+    width: 34%;
+
 }
