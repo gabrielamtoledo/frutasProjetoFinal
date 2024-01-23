@@ -403,3 +403,114 @@ nav {
     100% - 20px
   ); /* Garante que a largura máxima seja 100% - a margem */
 }
+
+
+/* Contato --------------------------------------------*/
+.envieMenssagem {
+  background-image: url("contato_BG.png");
+  background-color: green;
+}
+
+.telaMenssagem {
+  font-family: "Inter", sans-serif;
+  font-size: medium;
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  text-align: center;
+  width: 800px;
+  height: 350px;
+}
+
+.textCard {
+  padding-inline-start: 2%;
+  padding-inline-end: 50%;
+  font-family: "Inter", sans-serif;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.telaMenssagem Button {
+  font-size: medium;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+  height: 70px;
+  background-color: #407536;
+  border-radius: 100px;
+  border-style: none;
+}
+
+.enviarButton {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.imgContato {
+  display: block;
+  width: 100%;
+}
+
+/* Como Funciona --------------------------------------------*/
+.comoFunciona {
+  font-family: "Inter", sans-serif;
+  background-color: #FFFFFF;
+  height: 550px;
+  padding: 100px;
+  width: 50%;
+
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.fontStrong {
+  font-weight: 400;
+}
+
+.paragrafo {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 320;
+  font-size: 40px;
+  color: #190B00;
+  width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 375px;
+  left: 150px;
+  margin-top: 85px;
+}
+
+.compreButton {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #FA6662;
+  padding-inline-start: 70px;
+  padding-inline-end: 70px;
+  height: 115px;
+  border-radius: 100px;
+  border-style: none;
+  position: absolute;
+  top: 1050px;
+  left: 150px;
+
+}
+
+
+.kiwiImg {
+  margin-left: 67%;
+  width: 33%;
+
+}
