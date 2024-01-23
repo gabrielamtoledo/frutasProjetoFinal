@@ -7,29 +7,50 @@
 
 }
 
-p{
-    width: 800px;
-    height: 100px;
-    position: relative;
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
 
+.fontStrong{
+    font-weight: 400;
+}
+
+p{
+    position: relative;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 320;
+    font-size: 40px;
+    color: #190B00;
+    width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 375px;
+    left: 150px;
 
 }
 
-
 .compreButton{ 
-    font-size: medium;
+    font-size: xx-large;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #FA6662;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
-    height: 80px;
+    padding-inline-start: 70px;
+    padding-inline-end: 70px;
+    height: 115px;
     border-radius: 100px;
     border-style: none;
+    position: absolute;
+    top: 1050px;
+    left: 150px;
+
 }
 
+
 .kiwiImg{
-    margin-left: 66%;
-    width: 34%;
+    margin-left: 67%;
+    width: 33%;
 
 }
