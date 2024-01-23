@@ -335,7 +335,7 @@ z-index: -1;
 
 #diferenciais {
     background-color: #FFF2D8;
-    height: 1479px;
+    height: 1000px;
 
 }
 
@@ -347,29 +347,48 @@ z-index: -1;
     width: 570px;
     position:relative;
     top:400px;
-    left:86px
+    left:50px
 
 }
 
-table{
-    border: 2px solid #190B00;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    overflow: hidden;
-    width:910px;
+#logoTabela{
+    height: 96px;
+    width: auto;
     position: relative;
-    left: 600px;
-    top:04px;
+    top: 10px;
+}
+
+#tabela{
+    position:absolute;
+    z-index: index 0;
+    height: 550px;
+    width:auto;
+    left:525px;
+    top:3400px;
+}
+
+table{
+    width:910px;
+    position: absolute;
+    left:525px;
+    top:3375px;
+    color:#190b00;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
 }
 
 
 th, td {
-    border: 2px solid  #190B00;
-    padding: 12px; 
     text-align: left;
+    height: 90px;
+    padding-left: 5px;
 }
 
+#end{
+    height:50px;
+    background-color: white;
+}
 
 .column1{
     width:465px;
