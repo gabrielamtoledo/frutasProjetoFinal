@@ -289,12 +289,14 @@ nav {
   display: flex;
   width: max-content;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 30px;
   /* align-content: flex-start; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
   color: white;
   background-color: #190b00;
+  font-size: 30px;
+  font-weight: bolder;
 }
 /* Footer--------------------------------------------*/
 .footer {
@@ -404,7 +406,6 @@ nav {
   ); /* Garante que a largura máxima seja 100% - a margem */
 }
 
-
 /* Contato --------------------------------------------*/
 .envieMenssagem {
   background-image: url("contato_BG.png");
@@ -430,7 +431,7 @@ nav {
   padding-inline-end: 50%;
   font-family: "Inter", sans-serif;
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 30px;
 }
 
@@ -447,7 +448,7 @@ nav {
 .enviarButton {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .imgContato {
@@ -458,15 +459,14 @@ nav {
 /* Como Funciona --------------------------------------------*/
 .comoFunciona {
   font-family: "Inter", sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 550px;
   padding: 100px;
   width: 50%;
-
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 50px;
   font-weight: 600;
   margin-left: 50px;
@@ -479,10 +479,10 @@ h1 {
 
 .paragrafo {
   position: relative;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 320;
   font-size: 40px;
-  color: #190B00;
+  color: #190b00;
   width: 1080px;
   display: flex;
   flex-wrap: wrap;
@@ -495,8 +495,8 @@ h1 {
 .compreButton {
   font-size: xx-large;
   font-weight: bold;
-  color: #FFFFFF;
-  background-color: #FA6662;
+  color: #ffffff;
+  background-color: #fa6662;
   padding-inline-start: 70px;
   padding-inline-end: 70px;
   height: 115px;
@@ -505,12 +505,9 @@ h1 {
   position: absolute;
   top: 1050px;
   left: 150px;
-
 }
-
 
 .kiwiImg {
   margin-left: 67%;
   width: 33%;
-
 }
