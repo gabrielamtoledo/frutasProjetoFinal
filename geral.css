@@ -299,7 +299,6 @@ nav {
   font-weight: bolder;
 }
 /* Checkout - Informações Cliente -------------------*/
-<style>
       .order {
         display: flex;
         flex-direction: column;
@@ -434,7 +433,6 @@ nav {
         color: #f0f0f0;
         border-radius: 100px;
       }
-    </style>
 /* Footer--------------------------------------------*/
 .footer {
   position: relative;
