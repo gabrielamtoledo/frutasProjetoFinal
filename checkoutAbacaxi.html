@@ -11,6 +11,9 @@
           justify-content: center;
           align-items: center;
         }
+          .error {
+            color: red;
+          }
   </style>
     <title>Checkout</title>
   </head>
@@ -72,12 +75,13 @@
         <div class="caixaTexto1">Seus dados:</div>
         <div class="grupoInfoBox">
           <div class="caixaInfoBox">
-            <input type="text" class="textoCaixaInfoBox" placeholder="Nome" />
+            <input type="text" class="textoCaixaInfoBox" id="nome" placeholder="Nome" />
           </div>
           <div class="caixaInfoBox">
             <input
               type="text"
               class="textoCaixaInfoBox"
+              id = "sobrenome"
               placeholder="Sobrenome"
             />
           </div>
@@ -85,6 +89,7 @@
             <input
               type="text"
               class="textoCaixaInfoBox"
+              id = "endereco"
               placeholder="Endereço"
             />
           </div>
@@ -92,16 +97,17 @@
             <input
               type="text"
               class="textoCaixaInfoBox"
+              id = "numeroCartao"
               placeholder="Número do cartão"
             />
           </div>
         </div>
         <div class="colunaBox">
           <div class="caixaInfoBoxSmall">
-            <input type="text" class="textoCaixaInfoBox" placeholder="MM/YY" />
+            <input type="text" class="textoCaixaInfoBox" id="validade" placeholder="MM/YY" />
           </div>
           <div class="caixaInfoBoxSmall">
-            <input type="text" class="textoCaixaInfoBox" placeholder="CVV" />
+            <input type="text" class="textoCaixaInfoBox" id="cvv" placeholder="CVV" />
           </div>
         </div>
         <div class="buttomFramePedido">
@@ -131,5 +137,55 @@
     <!-- Estrutura para aplicação do footer com utilização do javascript
     <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
     -->
+    <script>
+    function enviarPedido() {
+      var nome = document.getElementById('nome').value;
+      var sobrenome = document.getElementById('sobrenome').value;
+      var endereco = document.getElementById('endereco').value;
+      var numeroCartao = document.getElementById('numeroCartao').value;
+      var validade = document.getElementById('validade').value;
+      var cvv = document.getElementById('cvv').value;
+    
+      var nomeValido = /^[a-zA-ZÀ-ú\s]+$/.test(nome);
+      var sobrenomeValido = /^[a-zA-ZÀ-ú\s]+$/.test(sobrenome);
+      var enderecoValido = /^[a-zA-Z0-9À-ú\s]+$/.test(endereco);
+      var numeroCartaoValido = /^\d+$/.test(numeroCartao);
+      var validadeValido = /^\d{2}\/\d{2}$/.test(validade);
+      var cvvValido = /^\d{3}$/.test(cvv);
+    
+      if (!nomeValido) {
+        alert("Por favor, insira um nome válido.");
+        return;
+      }
+    
+      if (!sobrenomeValido) {
+        alert("Por favor, insira um sobrenome válido.");
+        return;
+      }
+    
+      if (!enderecoValido) {
+        alert("Por favor, insira um endereço válido.");
+        return;
+      }
+    
+      if (!numeroCartaoValido) {
+        alert("Por favor, insira um número de cartão válido.");
+        return;
+      }
+    
+      if (!validadeValido) {
+        alert("Por favor, insira uma data de validade válida (MM/YY).");
+        return;
+      }
+    
+      if (!cvvValido) {
+        alert("Por favor, insira um CVV válido.");
+        return;
+      }
+    
+      // Se todos os campos estiverem corretos, você pode prosseguir com o envio do pedido
+      alert("Pedido enviado com sucesso!");
+    }
+</script>
   </body>
 </html>
