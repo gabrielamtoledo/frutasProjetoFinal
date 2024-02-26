@@ -15,40 +15,31 @@
             color: red;
           }
             /* Estilo para o modal */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.4);
-    }
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-
-    /* Estilo para o botão de fechar */
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+    /* Estilo para o modal */
+        .modal {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            max-width: 200px;
+            padding: 20px;
+            background-color: #fefefe;
+            border: 1px solid #888;
+        }
+    
+        /* Estilo para o botão de fechar */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
   </style>
     <title>Checkout</title>
   </head>
@@ -75,7 +66,7 @@
       <section class="checkout-produto">
         <article>
           <p>Seu carrinho:</p>
-          <div class="card" onmouseover="getNutritionalInfo('pineapple')">
+          <div class="card" onmouseover="getNutritionalInfo('abacaxi')" onmouseleave="closeModal()">
             <img
               class="fruit-img"
               src="img/pineapple.png"
@@ -97,11 +88,10 @@
               </div>
             </div>
           </div>
-        <div id="modal" class="modal">
-          <div class="modal-content">
+          <div class="modal" id="modal">
             <span class="close" onclick="closeModal()">&times;</span>
             <div id="nutritionalInfo"></div>
-        </div>
+          </div>
       </div>
         </article>
         <article class="checkout-totalprice">
