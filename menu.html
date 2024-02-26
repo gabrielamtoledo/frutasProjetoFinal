@@ -24,18 +24,29 @@
     <header>
       <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
       <ul id="guiasHeader">
-          <li><a class="guiasHeader" href="index.html">Home</a> </li>
-          <li><a class="guiasHeader" href="menu.html">Menu</a></li>
-          <li><a class="guiasHeader" href="comoFunciona.html">Como Funciona </a></li>
-          <li><a class="guiasHeader" href="contato.html">Contato</a></li>
+        <li><a class="guiasHeader" href="index.html">Home</a></li>
+        <li><a class="guiasHeader" href="menu.html">Menu</a></li>
+        <li>
+          <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
+        </li>
+        <li><a class="guiasHeader" href="contato.html">Contato</a></li>
       </ul>
-      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
-  </header>
+      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a
+        href="login.html"
+        ><button id="botaoAreaProdutor">Área do produtor</button></a
+      >
+    </header>
 
     <main class="menu-main">
       <div class="container-cards">
         <div class="card">
-          <img class="fruit-img" src="img/apple.png" alt="Maçã" width="200px" />
+          <img
+            onclick="infoFruit('apple')"
+            class="fruit-img"
+            src="img/apple.png"
+            alt="Maçã"
+            width="200px"
+          />
           <p>Maca, 1Kg</p>
           <h2>R$5.00</h2>
           <div class="quantity">
@@ -181,5 +192,29 @@
         <img class="iconesCartoes" src="img/logosCartoes.png" />
       </div>
     </footer>
+
+    <script>
+      function infoFruit(fruitName) {
+        fetch(`https://www.fruityvice.com/api/fruit/${fruitName}`)
+          .then((response) => response.json())
+          .then((data) => {
+            // Construir a exibição das informações da fruta
+            const fruitInfo = `
+          <h2>${data.name}</h2>
+          <p>Family: ${data.family}</p>
+          <p>Genus: ${data.genus}</p>
+          <p>Order: ${data.order}</p>
+          <p>Carbohydrates: ${data.nutritions.carbohydrates}</p>
+          <p>Protein: ${data.nutritions.protein}</p>
+          <p>Fat: ${data.nutritions.fat}</p>
+        `;
+            console.log(fruitInfo);
+          })
+          .catch((error) => {
+            console.error("Error fetching fruit data:", error);
+            alert("Erro ao carregar informações da fruta");
+          });
+      }
+    </script>
   </body>
 </html>
