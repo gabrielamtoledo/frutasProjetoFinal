@@ -14,6 +14,32 @@
           .error {
             color: red;
           }
+            /* Estilo para o modal */
+    /* Estilo para o modal */
+        .modal {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            max-width: 200px;
+            padding: 20px;
+            background-color: #fefefe;
+            border: 1px solid #888;
+        }
+    
+        /* Estilo para o botão de fechar */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
   </style>
     <title>Checkout</title>
   </head>
@@ -40,7 +66,7 @@
       <section class="checkout-produto">
         <article>
           <p>Seu carrinho:</p>
-          <div class="card">
+          <div class="card" onmouseover="getNutritionalInfo('pineapple')" onmouseleave="closeModal()">
             <img
               class="fruit-img"
               src="img/pineapple.png"
@@ -62,6 +88,11 @@
               </div>
             </div>
           </div>
+          <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="nutritionalInfo"></div>
+          </div>
+      </div>
         </article>
         <article class="checkout-totalprice">
           <br />
@@ -183,6 +214,36 @@
         return;
       }
       alert("Pedido enviado com sucesso!");
+    }
+    
+    // Função para abrir o modal e obter os dados nutricionais da API
+    function getNutritionalInfo(fruit) {
+        var modal = document.getElementById("modal");
+        var nutritionalInfo = document.getElementById("nutritionalInfo");
+
+        // Fazendo a requisição à API
+        fetch(`https://www.fruityvice.com/api/fruit/${fruit}`)
+            .then(response => response.json())
+            .then(data => {
+                // Exibindo os dados nutricionais no modal
+                nutritionalInfo.innerHTML = `
+                    <h2>Dados Nutricionais do ${data.name}</h2>
+                    <p>Calorias: ${data.nutritions.calories}</p>
+                    <p>Carboidratos: ${data.nutritions.carbohydrates}</p>
+                    <p>Proteínas: ${data.nutritions.protein}</p>
+                    <p>Gorduras: ${data.nutritions.fat}</p>
+                `;
+            })
+            .catch(error => console.error('Erro ao obter dados nutricionais:', error));
+
+        // Exibindo o modal
+        modal.style.display = "block";
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
     }
 </script>
   </body>
