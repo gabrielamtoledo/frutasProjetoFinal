@@ -10,22 +10,11 @@
     <link rel="stylesheet" href="geral.css" />
   </head>
   <body class="menu-body">
-    <!-- <header class="menu-header">
-      <img src="img/logoFrutaWeb.png" alt="logo" />
-      <a class="guiasHeader" href="index.html">Home</a>
-      <a class="guiasHeader" href="menu.html">Menu</a>
-      <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
-      <a class="guiasHeader" href="contato.html">Contato</a>
-      <img src="img/iconeCesta.png" alt="carrinho" /><a href="login.html">
-        <button id="botaoAreaProdutor">Área do produtor</button></a
-      >
-    </header> -->
-
     <header>
       <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
       <ul id="guiasHeader">
         <li><a class="guiasHeader" href="index.html">Home</a></li>
-        <li><a class="guiasHeader" href="menu.html">Menu</a></li>
+        <li><a class="guiasHeader selected" href="menu.html">Menu</a></li>
         <li>
           <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
         </li>
@@ -51,9 +40,9 @@
           <h2>R$5.00</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutMaca.html">
@@ -74,9 +63,9 @@
           <h2>R$2.00</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutBanana.html">
@@ -92,9 +81,9 @@
           <h2>R$10.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutKiwi.html">
@@ -115,9 +104,9 @@
           <h2>R$8.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutLaranja.html">
@@ -138,9 +127,9 @@
           <h2>R$5.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutManga.html">
@@ -161,9 +150,9 @@
           <h2>R$9.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutAbacaxi.html">
@@ -193,7 +182,32 @@
       </div>
     </footer>
 
+    <!-- <script src="/scripts/scriptcards.js"></script> -->
     <script>
+      const decreaseBtns = document.querySelectorAll(".decreaseBtn");
+      const increaseBtns = document.querySelectorAll(".increaseBtn");
+      const quantitySpans = document.querySelectorAll(".quantityValue");
+
+      let quantities = Array.from({ length: decreaseBtns.length }).fill(0);
+
+      function updateQuantity(index) {
+        quantitySpans[index].textContent = quantities[index];
+      }
+
+      for (let i = 0; i < decreaseBtns.length; i++) {
+        decreaseBtns[i].addEventListener("click", function () {
+          if (quantities[i] > 0) {
+            quantities[i]--;
+            updateQuantity(i);
+          }
+        });
+
+        increaseBtns[i].addEventListener("click", function () {
+          quantities[i]++;
+          updateQuantity(i);
+        });
+      }
+
       async function getFruits() {
         const response = await fetch(
           "https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/pineapple",
@@ -211,14 +225,14 @@
           .then((data) => {
             // Construir a exibição das informações da fruta
             const fruitInfo = `
-                            <h2>${data.name}</h2>
-                            <p>Family: ${data.family}</p>
-                            <p>Genus: ${data.genus}</p>
-                            <p>Order: ${data.order}</p>
-                            <p>Carbohydrates: ${data.nutritions.carbohydrates}</p>
-                            <p>Protein: ${data.nutritions.protein}</p>
-                            <p>Fat: ${data.nutritions.fat}</p>
-                          `;
+                                <h2>${data.name}</h2>
+                                <p>Family: ${data.family}</p>
+                                <p>Genus: ${data.genus}</p>
+                                <p>Order: ${data.order}</p>
+                                <p>Carbohydrates: ${data.nutritions.carbohydrates}</p>
+                                <p>Protein: ${data.nutritions.protein}</p>
+                                <p>Fat: ${data.nutritions.fat}</p>
+                              `;
             console.log(fruitInfo);
           })
           .catch((error) => {
