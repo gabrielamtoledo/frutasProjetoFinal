@@ -200,6 +200,24 @@ header {
   top: 15px;
 }
 
+.card {
+  color: #190b00;
+  background-color: #fff8eb;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 30px;
+  width: 200px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.fruit-img {
+  width: 200px;
+  mix-blend-mode: darken;
+}
 .quantity {
   height: 30px;
   border-radius: 100px;
@@ -208,8 +226,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 50px;
 }
 .quantity-controlers {
   width: 100%;
@@ -231,6 +247,7 @@ header {
 .add-to-cart img {
   height: 20px;
 }
+
 .quantity button {
   color: none;
   background-color: transparent;
@@ -240,22 +257,6 @@ header {
   font-size: inherit;
   font-weight: bold;
   cursor: pointer;
-}
-
-.card {
-  border-radius: 50px;
-  width: 500px;
-  height: 400px;
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  border-radius: 50px;
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  color: #190b00;
-  margin: 25px;
 }
 
 #setaEsq {
