@@ -175,13 +175,43 @@ header {
 }
 
 .container-cards {
-  position: relative;
+  /* position: relative; */
   top: 120px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+  gap: 50px;
+  margin: ;
   align-content: space-between;
-  width: 1300px;
+  width: 100%; */
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.arrow-left {
+  left: 30px;
+}
+.arrow-right {
+  right: 30px;
 }
 
 .botaoMenos,
