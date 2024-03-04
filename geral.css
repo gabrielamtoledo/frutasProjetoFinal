@@ -173,7 +173,7 @@ nav {
     "header"
     "main"
     "footer";
-  grid-template-rows: 1fr 40% 1fr;
+  grid-template-rows: 1fr 50% 1fr;
 }
 .menu-header {
   grid-area: header;
@@ -283,6 +283,18 @@ nav {
 
 .close:hover {
   color: #aaa;
+}
+
+#textoSectionMenu {
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #190b00;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 /* Mensagem Sucesso--------------------------------------------*/
