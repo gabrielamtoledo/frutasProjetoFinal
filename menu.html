@@ -8,41 +8,46 @@
       /* criar javascript para adicionar ao carrinho e selecionar a quantidade de produtos */
     </style>
     <link rel="stylesheet" href="geral.css" />
+    <style></style>
   </head>
   <body class="menu-body">
-    <!-- <header class="menu-header">
-      <img src="img/logoFrutaWeb.png" alt="logo" />
-      <a class="guiasHeader" href="index.html">Home</a>
-      <a class="guiasHeader" href="menu.html">Menu</a>
-      <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
-      <a class="guiasHeader" href="contato.html">Contato</a>
-      <img src="img/iconeCesta.png" alt="carrinho" /><a href="login.html">
-        <button id="botaoAreaProdutor">Área do produtor</button></a
-      >
-    </header> -->
-
     <header>
       <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
       <ul id="guiasHeader">
-          <li><a class="guiasHeader" href="index.html">Home</a> </li>
-          <li><a class="guiasHeader" href="menu.html">Menu</a></li>
-          <li><a class="guiasHeader" href="comoFunciona.html">Como Funciona </a></li>
-          <li><a class="guiasHeader" href="contato.html">Contato</a></li>
+        <li><a class="guiasHeader" href="index.html">Home</a></li>
+        <li><a class="guiasHeader selected" href="menu.html">Menu</a></li>
+        <li>
+          <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
+        </li>
+        <li><a class="guiasHeader" href="contato.html">Contato</a></li>
       </ul>
-      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
-  </header>
+      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a
+        href="login.html"
+        ><button id="botaoAreaProdutor">Área do produtor</button></a
+      >
+    </header>
 
     <main class="menu-main">
+      <div id="textoSectionMenu">
+        Escolha as frutas que deseja adicionar ao carrinho
+      </div>
       <div class="container-cards">
         <div class="card">
-          <img class="fruit-img" src="img/apple.png" alt="Maçã" width="200px" />
+          <img
+            onclick="handleGetFruit('apple')"
+            class="fruit-img getFruitButton openPopupBtn"
+            src="img/apple.png"
+            alt="Maçã"
+            width="200px"
+            ,
+          />
           <p>Maca, 1Kg</p>
           <h2>R$5.00</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutMaca.html">
@@ -54,7 +59,8 @@
 
         <div class="card">
           <img
-            class="fruit-img"
+            onclick="handleGetFruit('banana')"
+            class="fruit-img getFruitButton openPopupBtn"
             src="img/banana.png"
             alt="Banana"
             width="200px"
@@ -63,9 +69,9 @@
           <h2>R$2.00</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutBanana.html">
@@ -76,14 +82,20 @@
         </div>
 
         <div class="card">
-          <img class="fruit-img" src="img/kiwi.png" alt="Kiwi" width="200px" />
+          <img
+            onclick="handleGetFruit('kiwi')"
+            class="fruit-img getFruitButton openPopupBtn"
+            src="img/kiwi.png"
+            alt="Kiwi"
+            width="200px"
+          />
           <p>Kiwi, 1Kg</p>
           <h2>R$10.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutKiwi.html">
@@ -95,7 +107,8 @@
 
         <div class="card">
           <img
-            class="fruit-img"
+            onclick="handleGetFruit('orange')"
+            class="fruit-img getFruitButton openPopupBtn"
             src="img/orange.png"
             alt="Laranja"
             width="200px"
@@ -104,9 +117,9 @@
           <h2>R$8.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutLaranja.html">
@@ -118,7 +131,8 @@
 
         <div class="card">
           <img
-            class="fruit-img"
+            onclick="handleGetFruit('mango')"
+            class="fruit-img getFruitButton openPopupBtn"
             src="img/mango.png"
             alt="Manga"
             width="200px"
@@ -127,9 +141,9 @@
           <h2>R$5.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutManga.html">
@@ -141,7 +155,8 @@
 
         <div class="card">
           <img
-            class="fruit-img"
+            onclick="handleGetFruit('pineapple')"
+            class="fruit-img getFruitButton openPopupBtn"
             src="img/pineapple.png"
             alt="Abacaxi"
             width="200px"
@@ -150,9 +165,9 @@
           <h2>R$9.99</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button>-</button>
-              <span id="quantity">0</span>
-              <button>+</button>
+              <button class="decreaseBtn">-</button>
+              <span class="quantityValue">0</span>
+              <button class="increaseBtn">+</button>
             </div>
             <div class="add-to-cart">
               <a href="checkoutAbacaxi.html">
@@ -181,5 +196,16 @@
         <img class="iconesCartoes" src="img/logosCartoes.png" />
       </div>
     </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" id="closePopupBtn">&times;</span>
+        <div class="container">
+          <div id="card"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scriptcards.js"></script>
   </body>
 </html>

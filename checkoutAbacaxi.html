@@ -11,6 +11,35 @@
           justify-content: center;
           align-items: center;
         }
+          .error {
+            color: red;
+          }
+            /* Estilo para o modal */
+    /* Estilo para o modal */
+        .modal {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            max-width: 200px;
+            padding: 20px;
+            background-color: #fefefe;
+            border: 1px solid #888;
+        }
+    
+        /* Estilo para o botão de fechar */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
   </style>
     <title>Checkout</title>
   </head>
@@ -37,7 +66,8 @@
       <section class="checkout-produto">
         <article>
           <p>Seu carrinho:</p>
-          <div class="card">
+          <!-- <div class="card" onmouseover="getNutritionalInfo('pineapple')" onmouseleave="closeModal()"> -->
+            <div class="card" >
             <img
               class="fruit-img"
               src="img/pineapple.png"
@@ -59,6 +89,11 @@
               </div>
             </div>
           </div>
+          <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="nutritionalInfo"></div>
+          </div>
+      </div>
         </article>
         <article class="checkout-totalprice">
           <br />
@@ -72,12 +107,13 @@
         <div class="caixaTexto1">Seus dados:</div>
         <div class="grupoInfoBox">
           <div class="caixaInfoBox">
-            <input type="text" class="textoCaixaInfoBox" placeholder="Nome" />
+            <input type="text" class="textoCaixaInfoBox" id="nome" placeholder="Nome" />
           </div>
           <div class="caixaInfoBox">
             <input
               type="text"
               class="textoCaixaInfoBox"
+              id = "sobrenome"
               placeholder="Sobrenome"
             />
           </div>
@@ -85,6 +121,7 @@
             <input
               type="text"
               class="textoCaixaInfoBox"
+              id = "endereco"
               placeholder="Endereço"
             />
           </div>
@@ -92,16 +129,17 @@
             <input
               type="text"
               class="textoCaixaInfoBox"
+              id = "numeroCartao"
               placeholder="Número do cartão"
             />
           </div>
         </div>
         <div class="colunaBox">
           <div class="caixaInfoBoxSmall">
-            <input type="text" class="textoCaixaInfoBox" placeholder="MM/YY" />
+            <input type="text" class="textoCaixaInfoBox" id="validade" placeholder="MM/YY" />
           </div>
           <div class="caixaInfoBoxSmall">
-            <input type="text" class="textoCaixaInfoBox" placeholder="CVV" />
+            <input type="text" class="textoCaixaInfoBox" id="cvv" placeholder="CVV" />
           </div>
         </div>
         <div class="buttomFramePedido">
@@ -131,5 +169,83 @@
     <!-- Estrutura para aplicação do footer com utilização do javascript
     <iframe src="footer.html" style="width:100%; height:594px" frameborder="0"></iframe>
     -->
+    <script>
+    function enviarPedido() {
+      var nome = document.getElementById('nome').value;
+      var sobrenome = document.getElementById('sobrenome').value;
+      var endereco = document.getElementById('endereco').value;
+      var numeroCartao = document.getElementById('numeroCartao').value;
+      var validade = document.getElementById('validade').value;
+      var cvv = document.getElementById('cvv').value;
+    
+      var nomeValido = /^[a-zA-ZÀ-ú\s]+$/.test(nome);
+      var sobrenomeValido = /^[a-zA-ZÀ-ú\s]+$/.test(sobrenome);
+      var enderecoValido = /^[a-zA-Z0-9À-ú\s]+$/.test(endereco);
+      var numeroCartaoValido = /^\d+$/.test(numeroCartao);
+      var validadeValido = /^\d{2}\/\d{2}$/.test(validade);
+      var cvvValido = /^\d{3}$/.test(cvv);
+    
+      if (!nomeValido) {
+        alert("Por favor, insira um nome válido.");
+        return;
+      }
+    
+      if (!sobrenomeValido) {
+        alert("Por favor, insira um sobrenome válido.");
+        return;
+      }
+    
+      if (!enderecoValido) {
+        alert("Por favor, insira um endereço válido.");
+        return;
+      }
+    
+      if (!numeroCartaoValido) {
+        alert("Por favor, insira um número de cartão válido.");
+        return;
+      }
+    
+      if (!validadeValido) {
+        alert("Por favor, insira uma data de validade válida (MM/YY).");
+        return;
+      }
+    
+      if (!cvvValido) {
+        alert("Por favor, insira um CVV válido.");
+        return;
+      }
+      alert("Pedido enviado com sucesso!");
+    }
+    
+    // Função para abrir o modal e obter os dados nutricionais da API
+    function getNutritionalInfo(fruit) {
+        var modal = document.getElementById("modal");
+        var nutritionalInfo = document.getElementById("nutritionalInfo");
+
+        // Fazendo a requisição à API
+        fetch(`https://www.fruityvice.com/api/fruit/${fruit}`)
+            .then(response => response.json())
+            .then(data => {
+                // Exibindo os dados nutricionais no modal
+                nutritionalInfo.innerHTML = `
+                    <h2>Dados Nutricionais do ${data.name}</h2>
+                    <p>Calorias: ${data.nutritions.calories}</p>
+                    <p>Carboidratos: ${data.nutritions.carbohydrates}</p>
+                    <p>Proteínas: ${data.nutritions.protein}</p>
+                    <p>Gorduras: ${data.nutritions.fat}</p>
+                `;
+            })
+            .catch(error => console.error('Erro ao obter dados nutricionais:', error));
+
+        // Exibindo o modal
+        modal.style.display = "block";
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+    }
+</script>
   </body>
 </html>

@@ -1,520 +1,570 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 header {
-    background-color: #FFF2D8;
-    height: 175 px;
-    width: 100%;
+  background-color: #fff2d8;
+  height: 175 px;
+  width: 100%;
 }
 
 .guiasHeader {
-    color: #190B00;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: none;
+  color: #190b00;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 #logoFrutasWeb {
-    width: 337px;
-    height: auto;
-}@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+  width: 337px;
+  height: auto;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 header {
-    background-color: #FFF2D8;
-    height: 175 px;
-    width: 100%;
+  background-color: #fff2d8;
+  height: 175 px;
+  width: 100%;
 }
 
 .guiasHeader {
-    color: #190B00;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: none;
+  color: #190b00;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+.guiasHeader::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #190b00; /* Color of the underline */
+  border-radius: 2px;
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.guiasHeader:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+.guiasHeader.selected::after {
+  width: 100%; /* Full width for the selected link */
 }
 
 #guiasHeader {
-    width: 550px;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    margin-right: 20px;
-    list-style-type: none;
-    padding: 0;
-    position: absolute;
-    top: 50px;
-    left: 450px;
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 450px;
 }
 
 #guiaEscolhida {
-    color:#FF9F52;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: underline;
-    text-decoration-color: #FF9F52;
-    text-decoration-thickness: 4px;
+  color: #ff9f52;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #ff9f52;
+  text-decoration-thickness: 4px;
 }
 
 #logoFrutasWeb {
-    width: 337px;
-    height: auto;
-    position: absolute;
-    top: 35px;
-    right: 15px;
+  width: 337px;
+  height: auto;
+  position: absolute;
+  top: 35px;
+  right: 15px;
 }
 
 #botaoAreaProdutor {
-    background-color: #FF9F52;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    height: 80px;
-    width: 260px;
-    border-radius: 100px;
-    border: none;
-    position: absolute;
-    top: 35px;
-    right: 50px;
+  background-color: #ff9f52;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  height: 80px;
+  width: 260px;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+  top: 35px;
+  right: 50px;
 }
 #addToCart {
-    position: absolute;
-    top: 55px;
-    right: 350px;
+  position: absolute;
+  top: 55px;
+  right: 350px;
 }
 
 #navIndex {
-    height: 800px;
-    width: 100%;
+  height: 800px;
+  width: 100%;
 }
 
 #navIndexTexto {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    color: #190B00;
-    width: 710px;
-    display: flex; 
-    flex-wrap: wrap; 
-    flex-direction: row;
-    align-content: flex-start ;
-    position: absolute;
-    top: 375px;
-    left: 150px
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #190b00;
+  width: 710px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  position: absolute;
+  top: 375px;
+  left: 150px;
 }
 
 #imagemFrutas {
-    width: 600px;
-    height: auto;
-    position: absolute;
-    right: 50px;
-    top: 175px;
+  width: 600px;
+  height: auto;
+  position: absolute;
+  right: 50px;
+  top: 175px;
 }
 
 #botaoCompreAgora {
-    background-color: #FF9F52;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    height: 144px;
-    width: 467px;
-    border-radius: 100px;
-    border: none;
-    position: absolute;
-    top: 637px;
-    left: 150px;
+  background-color: #ff9f52;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  height: 144px;
+  width: 467px;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+  top: 637px;
+  left: 150px;
 }
 
 #menuIndex {
-    height: 950px;
-    width: 100%;
-    background-color: #FFF2D8;
-   }
+  height: 950px;
+  width: 100%;
+  background-color: #fff2d8;
+}
 
 #textoSectionMenu {
-    font-size: 50px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #190B00;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50px;    
+  font-size: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #190b00;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
 }
 
 .container-cards {
-    position: relative;
-    top: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 1300px;
+  /* position: relative; */
+  top: 120px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 50px;
+  margin: ;
+  align-content: space-between;
+  width: 100%; */
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+  position: relative;
 }
 
-.botaoMenos, .botaoMais {
-    background-color:rgb(255, 255, 255);
-    border: none;
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.arrow-left {
+  left: 30px;
+}
+.arrow-right {
+  right: 30px;
+}
+
+.botaoMenos,
+.botaoMais {
+  background-color: rgb(255, 255, 255);
+  border: none;
 }
 
 .fruit-img {
-    width: 300px;
-    background-color: white; 
-    background-blend-mode: multiply;
+  width: 300px;
+  background-color: white;
+  background-blend-mode: multiply;
 }
-.textoFruta{
-    position:relative;
-    top:15px
-}
- 
-.quantity {
-    height: 30px;
-    border-radius: 100px;
-    margin-top: 5px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 50px
-}
-.quantity-controlers {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.add-to-cart {
-    height: 25px;
-    border-radius: 0px 100px 100px 0px;
-    padding: 5px 20px 0px 20px;
-    background-color: #190b00;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.add-to-cart img {
-    height: 20px;
-}
-.quantity button {
-    color: none ;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: inherit;
-    font-weight: bold;
-    cursor: pointer;
+.textoFruta {
+  position: relative;
+  top: 15px;
 }
 
 .card {
-    border-radius: 50px;
-    width: 500px;
-    height: 400px;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    border-radius: 50px;
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    color: #190B00;
-    margin: 25px;
-} 
+  color: #190b00;
+  background-color: #fff8eb;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 30px;
+  width: 200px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.fruit-img {
+  width: 200px;
+  mix-blend-mode: darken;
+}
+.quantity {
+  height: 30px;
+  border-radius: 100px;
+  margin-top: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity-controlers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-to-cart {
+  height: 25px;
+  border-radius: 0px 100px 100px 0px;
+  padding: 5px 20px 0px 20px;
+  background-color: #190b00;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-to-cart img {
+  height: 20px;
+}
+
+.quantity button {
+  color: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 #setaEsq {
-    position:absolute;
-    left:0px;
-    top:1300px;
+  position: absolute;
+  left: 0px;
+  top: 1300px;
 }
 
 #setaDir {
-    position:absolute;
-    right:0px;
-    top:1300px;
+  position: absolute;
+  right: 0px;
+  top: 1300px;
 }
 
 #botaoVerMais {
-    background-color: #407536;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    height: 144px;
-    width: 467px;
-    border-radius: 100px;
-    border: none;
-    position: relative;
-    left:100px;
-    top:200px
+  background-color: #407536;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  height: 144px;
+  width: 467px;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  left: 100px;
+  top: 200px;
 }
 
-.info { 
-    height: 1300px;
-    background-color: white;
-    position:relative;
-    z-index: 1;
-    color:#190b00;
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    font-weight: 300;
+.info {
+  height: 1300px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  color: #190b00;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 #infoText {
-    width: 800px;
-    height: 902px;
-    position: relative;
-    top: 150px;
-    left:100px;
+  width: 800px;
+  height: 902px;
+  position: relative;
+  top: 150px;
+  left: 100px;
 }
-#imgInfoKiwi{
-    height: 350px;
-    width: auto;
-    position:absolute;
-    right:0px;
-    top:0px;
-    z-index: -1;
-}
-
-#imgInfoMaca{
-transform: rotateX('22deg');
-height: 500px;
-width: auto;
-position:absolute;
-right:100px;
-top:250px;
-z-index: -1;
+#imgInfoKiwi {
+  height: 350px;
+  width: auto;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
 }
 
-#imgInfoMorango{
-transform: rotateY('22deg');
-height: 300px;
-width: auto;
-position:absolute;
-right: -4px;
-top:700px;
-z-index: -1;
+#imgInfoMaca {
+  transform: rotateX("22deg");
+  height: 500px;
+  width: auto;
+  position: absolute;
+  right: 100px;
+  top: 250px;
+  z-index: -1;
 }
 
-#imgInfoBanana{
-height: 250px;
-width: auto;
-position:absolute;
-right: 100px;
-bottom:0px;
-z-index: -1;
+#imgInfoMorango {
+  transform: rotateY("22deg");
+  height: 300px;
+  width: auto;
+  position: absolute;
+  right: -4px;
+  top: 700px;
+  z-index: -1;
+}
+
+#imgInfoBanana {
+  height: 250px;
+  width: auto;
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+  z-index: -1;
 }
 
 #botaoCompreAgoraInfo {
-    background-color: #407536;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    height: 144px;
-    width: 467px;
-    border-radius: 100px;
-    border: none;
-    position: relative;
-    left:100px;
-    top:150px
+  background-color: #407536;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  height: 144px;
+  width: 467px;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  left: 100px;
+  top: 150px;
 }
 
 #diferenciais {
-    background-color: #FFF2D8;
-    height: 1000px;
-
+  background-color: #fff2d8;
+  height: 1000px;
 }
 
-#textoDiferenciais{
-    color:#190b00;
-    font-family: 'Inter', sans-serif;
-    font-size: 80px;
-    font-weight: 500;
-    width: 570px;
-    position:relative;
-    top:400px;
-    left:50px
-
+#textoDiferenciais {
+  color: #190b00;
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  width: 570px;
+  position: relative;
+  top: 400px;
+  left: 50px;
 }
 
-#logoTabela{
-    height: 96px;
-    width: auto;
-    position: relative;
-    top: 10px;
+#logoTabela {
+  height: 96px;
+  width: auto;
+  position: relative;
+  top: 10px;
 }
 
-#tabela{
-    position:absolute;
-    z-index: index 0;
-    height: 550px;
-    width:auto;
-    left:525px;
-    top:3400px;
+#tabela {
+  position: absolute;
+  z-index: index 0;
+  height: 550px;
+  width: auto;
+  left: 525px;
+  top: 3400px;
 }
 
-table{
-    width:910px;
-    position: absolute;
-    left:525px;
-    top:3375px;
-    color:#190b00;
-    font-family: 'Inter', sans-serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 5px;
+table {
+  width: 910px;
+  position: absolute;
+  left: 525px;
+  top: 3375px;
+  color: #190b00;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 5px;
 }
 
-
-th, td {
-    text-align: left;
-    height: 90px;
-    padding-left: 5px;
+th,
+td {
+  text-align: left;
+  height: 90px;
+  padding-left: 5px;
 }
 
-#end{
-    height:25px;
-    background-color: white;
+#end {
+  height: 25px;
+  background-color: white;
 }
 
-.column1{
-    width:500px;
+.column1 {
+  width: 500px;
 }
 
-#buttonTable{
-    background-color: #407536;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    height: 144px;
-    width: 467px;
-    border-radius: 100px;
-    border: none;
-    position: relative;
-    top:500px ;
-    left:30px;
-   
+#buttonTable {
+  background-color: #407536;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  height: 144px;
+  width: 467px;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  top: 500px;
+  left: 30px;
 }
 
 .footer {
-    position: relative;
-    width: 100%;
-    height: 594px;
-    background-color: #fff2d8;
+  position: relative;
+  width: 100%;
+  height: 594px;
+  background-color: #fff2d8;
 }
-  
+
 .footer .guiasFooter {
-    position: absolute;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #190b00;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
-    width: 232px;
-    height: 202px;
-    top: 189px;
-    left: 580px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #190b00;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 232px;
+  height: 202px;
+  top: 189px;
+  left: 580px;
 }
-  
+
 .footer #guiasFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
-    list-style: none;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  list-style: none;
+  margin: 0;
 }
-  
+
 .footer #guiasFooter li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .footer #guiasFooter li a {
-    color: #190b00;
-    text-decoration: none;
+  color: #190b00;
+  text-decoration: none;
 }
-  
+
 .footer .imagensLogoLine {
-    position: absolute;
-    width: 442px;
-    height: 264px;
-    top: 162px;
-    left: 138px;
+  position: absolute;
+  width: 442px;
+  height: 264px;
+  top: 162px;
+  left: 138px;
 }
-  
+
 .footer .line {
-    position: absolute;
-    width: 1px;
-    height: 264px;
-    top: 0;
-    left: 365px;
-    object-fit: cover;
+  position: absolute;
+  width: 1px;
+  height: 264px;
+  top: 0;
+  left: 365px;
+  object-fit: cover;
 }
-  
+
 .footer .logo {
-    position: absolute;
-    width: 442px;
-    height: 177px;
-    top: 39px;
-    left: 0;
-    object-fit: cover;
+  position: absolute;
+  width: 442px;
+  height: 177px;
+  top: 39px;
+  left: 0;
+  object-fit: cover;
 }
-  
+
 .footer .p {
-    position: absolute;
-    width: 367px;
-    top: 542px;
-    left: 105px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+  position: absolute;
+  width: 367px;
+  top: 542px;
+  left: 105px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
 }
 .footer .iconesMidiaCartoes {
-    position: absolute;
-    width: 37px;
-    height: 38px;
-    top: 7px;
-    left: 173px;
+  position: absolute;
+  width: 37px;
+  height: 38px;
+  top: 7px;
+  left: 173px;
 }
 .footer .iconesMidia {
-    position: absolute;
-    width: 210px;
-    height: 38px;
-    top: 515px;
-    right: 70px; /* Defina a margem desejada do canto direito */
-    object-fit: cover;
-    max-width: calc(
-      100% - 20px
-    ); /* Garante que a largura máxima seja 100% - a margem */
+  position: absolute;
+  width: 210px;
+  height: 38px;
+  top: 515px;
+  right: 70px; /* Defina a margem desejada do canto direito */
+  object-fit: cover;
+  max-width: calc(
+    100% - 20px
+  ); /* Garante que a largura máxima seja 100% - a margem */
 }
 .footer .iconesCartoes {
-    position: absolute;
-    width: 370px;
-    height: 141px;
-    top: 212px;
-    right: 20px;
-    object-fit: cover;
-    max-width: calc(
-      100% - 20px
-    ); /* Garante que a largura máxima seja 100% - a margem */
+  position: absolute;
+  width: 370px;
+  height: 141px;
+  top: 212px;
+  right: 20px;
+  object-fit: cover;
+  max-width: calc(
+    100% - 20px
+  ); /* Garante que a largura máxima seja 100% - a margem */
 }
-  

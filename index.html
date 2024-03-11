@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrutaWeb Homepage</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
     <header>
-        <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo"/>
-        <ul id="guiasHeader">
-            <li><a id="guiaEscolhida" href="index.html">Home</a> </li>
-            <li><a class="guiasHeader" href="menu.html">Menu</a></li>
-            <li><a class="guiasHeader" href="comoFunciona.html">Como Funciona </a></li>
-            <li><a class="guiasHeader" href="contato.html">Contato</a></li>
-          </ul>
-        <img id="addToCart" src="img/iconeCesta.png" alt="carrinho"/><a href="login.html"> <button id="botaoAreaProdutor">Área do produtor</button></a>
+      <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
+      <ul id="guiasHeader">
+        <li><a class="guiasHeader selected" href="index.html">Home</a></li>
+        <li><a class="guiasHeader" href="menu.html">Menu</a></li>
+        <li>
+          <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
+        </li>
+        <li><a class="guiasHeader" href="contato.html">Contato</a></li>
+      </ul>
+      <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a
+        href="login.html"
+      >
+        <button id="botaoAreaProdutor">Área do produtor</button></a
+      >
     </header>
 
     <nav id="navIndex">
-        <div id="navIndexTexto">Conectando a natureza à sua porta: frutas frescas, direto do produtor para você!</div>
-        <img id="imagemFrutas" src="img/frutasHome.png" alt="frutas variadas"/>
-        <a  href="menu.html"><button id="botaoCompreAgora">Compre agora</button></a>
+      <div id="navIndexTexto">
+        Conectando a natureza à sua porta: frutas frescas, direto do produtor
+        para você!
+      </div>
+      <img id="imagemFrutas" src="img/frutasHome.png" alt="frutas variadas" />
+      <a href="menu.html"
+        ><button id="botaoCompreAgora">Compre agora</button></a
+      >
     </nav>
 
     <section id="menuIndex">
-        <div id="textoSectionMenu">Escolha as frutas que deseja adicionar ao carrinho</div>
-        <div class="container-cards">
+      <div id="textoSectionMenu">
+        Escolha as frutas que deseja adicionar ao carrinho
+      </div>
+      <div class="container-cards">
+        <div class="carousel">
           <div class="card">
-            <img class="fruit-img" src="img/kiwi.png" alt="Kiwi" width="200px" />
-            <div class="textoFruta">
-              <p>Kiwi, 1Kg</p>
-              <h2>R$10.99</h2>
-            </div>
+            <img
+              onclick="handleGetFruit('apple')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/apple.png"
+              alt="Maçã"
+              width="200px"
+              ,
+            />
+            <p>Maca, 1Kg</p>
+            <h2>R$5.00</h2>
             <div class="quantity">
               <div class="quantity-controlers">
-                <button>-</button>
-                <span id="quantity">0</span>
-                <button>+</button>
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutMaca.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              onclick="handleGetFruit('banana')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/banana.png"
+              alt="Banana"
+              width="200px"
+            />
+            <p>Banana, 1Kg</p>
+            <h2>R$2.00</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutBanana.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              onclick="handleGetFruit('kiwi')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/kiwi.png"
+              alt="Kiwi"
+              width="200px"
+            />
+            <p>Kiwi, 1Kg</p>
+            <h2>R$10.99</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
               </div>
               <div class="add-to-cart">
                 <a href="checkoutKiwi.html">
@@ -48,16 +116,20 @@
           </div>
 
           <div class="card">
-            <img class="fruit-img" src="img/orange.png" alt="Laranja" width="200px" />
-            <div class="textoFruta">
-              <p>Laranja, 1Kg</p>
-              <h2>R$8.99</h2>
-            </div>
+            <img
+              onclick="handleGetFruit('orange')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/orange.png"
+              alt="Laranja"
+              width="200px"
+            />
+            <p>Laranja, 1Kg</p>
+            <h2>R$8.99</h2>
             <div class="quantity">
               <div class="quantity-controlers">
-                <button>-</button>
-                <span id="quantity">0</span>
-                <button>+</button>
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
               </div>
               <div class="add-to-cart">
                 <a href="checkoutLaranja.html">
@@ -65,131 +137,256 @@
                 </a>
               </div>
             </div>
-          </div>  
-                       
-            <div class="card">
-              <img class="fruit-img" src="img/apple.png" alt="Maçã" width="200px" />
-              <div class="textoFruta">
-                <p>Maçã, 1Kg</p>
-                <h2>R$6.99</h2>
-              </div>
-              <div class="quantity">
-                <div class="quantity-controlers">
-                  <button>-</button>
-                  <span id="quantity">0</span>
-                  <button onclick="adicionar()">+</button>
-                </div>
-                <div class="add-to-cart">
-                  <a href="checkoutMaca.html">
-                    <img src="img/iconBasket.png" alt="cesta" />
-                  </a>
-                </div>
-              </div>
-            </div>
-    
-            <div class="card">
-              <img class="fruit-img" src="img/banana.png" alt="Banana" width="200px" />
-              <div class="textoFruta">
-                <p>Banana, 1Kg</p>
-                <h2>R$7.99</h2>
-              </div>
-              <div class="quantity">
-                <div class="quantity-controlers">
-                  <button>-</button>
-                  <span id="quantity">0</span>
-                  <button>+</button>
-                </div>
-                <div class="add-to-cart">
-                  <a href="checkoutBanana.html">
-                    <img src="img/iconBasket.png" alt="cesta" />
-                  </a>
-                </div>
-              </div>
-            </div>
-      </div>          
-      
-      <a href="menu.html"><button id="botaoVerMais">Ver mais</button></a>
+          </div>
 
-      <img id="setaEsq" src="img/iconArrowLeft.png" alt="seta esquerda"/> 
-      <img id="setaDir" src="img/iconArrowRight.png" alt="seta direita"/> 
+          <div class="card">
+            <img
+              onclick="handleGetFruit('mango')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/mango.png"
+              alt="Manga"
+              width="200px"
+            />
+            <p>Manga, 1Kg</p>
+            <h2>R$5.99</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutManga.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              onclick="handleGetFruit('pineapple')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/pineapple.png"
+              alt="Abacaxi"
+              width="200px"
+            />
+            <p>Abacaxi, 1Kg</p>
+            <h2>R$9.99</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutAbacaxi.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              onclick="handleGetFruit('apple')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/apple.png"
+              alt="Maçã"
+              width="200px"
+              ,
+            />
+            <p>Maca, 1Kg</p>
+            <h2>R$5.00</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutMaca.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              onclick="handleGetFruit('apple')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/apple.png"
+              alt="Maçã"
+              width="200px"
+              ,
+            />
+            <p>Maca, 1Kg</p>
+            <h2>R$5.00</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutMaca.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              onclick="handleGetFruit('apple')"
+              class="fruit-img getFruitButton openPopupBtn"
+              src="img/apple.png"
+              alt="Maçã"
+              width="200px"
+              ,
+            />
+            <p>Maca, 1Kg</p>
+            <h2>R$5.00</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn">-</button>
+                <span class="quantityValue">0</span>
+                <button class="increaseBtn">+</button>
+              </div>
+              <div class="add-to-cart">
+                <a href="checkoutMaca.html">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow arrow-left">
+          &lt;
+          <img id="setaEsq" src="img/iconArrowLeft.png" alt="seta esquerda" />
+        </div>
+        <div class="arrow arrow-right">
+          &gt;
+          <img id="setaDir" src="img/iconArrowRight.png" alt="seta direita" />
+        </div>
+      </div>
+      <!-- <img id="setaEsq" src="img/iconArrowLeft.png" alt="seta esquerda" />
+      <img id="setaDir" src="img/iconArrowRight.png" alt="seta direita" /> -->
+      <a href="menu.html"><button id="botaoVerMais">Ver mais</button></a>
     </section>
 
     <section class="info">
-        <p id="infoText"> 
-           <b>Variedade Exclusiva:</b> Descubra frutas únicas e sazonais não disponíveis nos mercados tradicionais. <br>
-           <br>
-           <b>Comércio Transparente:</b> Origem e métodos de cultivo transparentes para uma escolha consciente.<br>
-           <br>            
-           <b>Praticidade Online:</b> Faça suas compras sem sair de casa, com entrega direta em sua porta.<br>
-           <br>            
-           <b>Apoio aos Produtores Locais:</b> Contribua para a economia regional e fortaleça a agricultura local.
-        </p>
-        <a href="menu.html"><button id="botaoCompreAgoraInfo">Compre agora</button></a>
-        <img id= imgInfoKiwi src="img/kiwi.png" alt="kiwi"/> 
-        <img id= imgInfoMaca src="img/appleIndex.png" alt="maça"/> 
-        <img id= imgInfoMorango src="img/strawberry.png" alt="morango"/> 
-        <img id= imgInfoBanana src="img/banana.png" alt="banana"/> 
+      <p id="infoText">
+        <b>Variedade Exclusiva:</b> Descubra frutas únicas e sazonais não
+        disponíveis nos mercados tradicionais. <br />
+        <br />
+        <b>Comércio Transparente:</b> Origem e métodos de cultivo transparentes
+        para uma escolha consciente.<br />
+        <br />
+        <b>Praticidade Online:</b> Faça suas compras sem sair de casa, com
+        entrega direta em sua porta.<br />
+        <br />
+        <b>Apoio aos Produtores Locais:</b> Contribua para a economia regional e
+        fortaleça a agricultura local.
+      </p>
+      <a href="menu.html"
+        ><button id="botaoCompreAgoraInfo">Compre agora</button></a
+      >
+      <img id="imgInfoKiwi" src="img/kiwi.png" alt="kiwi" />
+      <img id="imgInfoMaca" src="img/appleIndex.png" alt="maça" />
+      <img id="imgInfoMorango" src="img/strawberry.png" alt="morango" />
+      <img id="imgInfoBanana" src="img/banana.png" alt="banana" />
     </section>
 
     <section id="diferenciais">
-        <h1 id="textoDiferenciais">Nossos diferenciais</h1>
-        <img id="tabela" src="img/table.png" alt="tabela"/> 
-        <table>
-            <tr>
-              <th></th>
-              <th><img id="logoTabela" src="img/logoFrutaWeb.png" alt="logo"/></th>
-              <th>Outros</th>
-            </tr>
-            <tr>
-              <td >100% orgânico</td>
-              <td class="row 1"><img src="img/iconYes.png" alt="sim"/> </td>
-              <td class="row 1"><img src="img/iconNo.png" alt="não"/> </td>
-            </tr>
-            <tr>
-              <td class="column1">Entrega na sua casa</td>
-              <td><img src="img/iconYes.png" alt="sim"/> </td>
-              <td><img src="img/iconNo.png" alt="não"/> </td>
-            </tr>
-            <tr>
-              <td class="column1">Frutas da estação</td>
-              <td><img src="img/iconYes.png" alt="sim"/> </td>
-              <td><img src="img/iconNo.png" alt="não"/> </td>
-            </tr>
-            <tr>
-              <td class="column1">Direto do produtor</td>
-              <td><img src="img/iconYes.png" alt="sim"/> </td>
-              <td><img src="img/iconNo.png" alt="não"/> </td>
-            </tr>
-            <tr>
-              <td class="column1">Feito com amor</td>
-              <td><img src="img/iconHeart.png" alt="coração"/> </td>
-              <td><img src="img/iconNo.png" alt="não"/> </td>
-            </tr>
-        </table>
-        <a href="menu.html"><button id="buttonTable">Compre agora</button></a>
+      <h1 id="textoDiferenciais">Nossos diferenciais</h1>
+      <img id="tabela" src="img/table.png" alt="tabela" />
+      <table>
+        <tr>
+          <th></th>
+          <th><img id="logoTabela" src="img/logoFrutaWeb.png" alt="logo" /></th>
+          <th>Outros</th>
+        </tr>
+        <tr>
+          <td>100% orgânico</td>
+          <td class="row 1"><img src="img/iconYes.png" alt="sim" /></td>
+          <td class="row 1"><img src="img/iconNo.png" alt="não" /></td>
+        </tr>
+        <tr>
+          <td class="column1">Entrega na sua casa</td>
+          <td><img src="img/iconYes.png" alt="sim" /></td>
+          <td><img src="img/iconNo.png" alt="não" /></td>
+        </tr>
+        <tr>
+          <td class="column1">Frutas da estação</td>
+          <td><img src="img/iconYes.png" alt="sim" /></td>
+          <td><img src="img/iconNo.png" alt="não" /></td>
+        </tr>
+        <tr>
+          <td class="column1">Direto do produtor</td>
+          <td><img src="img/iconYes.png" alt="sim" /></td>
+          <td><img src="img/iconNo.png" alt="não" /></td>
+        </tr>
+        <tr>
+          <td class="column1">Feito com amor</td>
+          <td><img src="img/iconHeart.png" alt="coração" /></td>
+          <td><img src="img/iconNo.png" alt="não" /></td>
+        </tr>
+      </table>
+      <a href="menu.html"><button id="buttonTable">Compre agora</button></a>
     </section>
 
     <section id="end"></section>
 
     <footer>
       <div class="footer">
-          <ul id="guiasFooter" class="guiasFooter">
-              <li><a href="comoFunciona.html">Como Funciona</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li><a href="index.html">Home</a></li>
-          </ul>
-          <div class="imagensLogoLine">
-              <img class="line" src="img/footerLine.png" />
-              <img class="logo" src="img/logoFrutaWeb.png" />
-          </div>
-          <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
-                  <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
-                  <img class="iconesCartoes" src="img/logosCartoes.png" />
+        <ul id="guiasFooter" class="guiasFooter">
+          <li><a href="comoFunciona.html">Como Funciona</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <div class="imagensLogoLine">
+          <img class="line" src="img/footerLine.png" />
+          <img class="logo" src="img/logoFrutaWeb.png" />
+        </div>
+        <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
+        <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
+        <img class="iconesCartoes" src="img/logosCartoes.png" />
       </div>
-  </footer>
+    </footer>
 
-  <script src="index.js"></script>
+    <script src="scriptcards.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".container-cards");
+        const slides = carousel.querySelectorAll(".card");
+        const totalSlides = slides.length;
+        const arrowLeft = carousel.querySelector(".arrow-left");
+        const arrowRight = carousel.querySelector(".arrow-right");
+        let currentIndex = 0;
 
-</body>
+        arrowLeft.addEventListener("click", function () {
+          moveCarousel(-1);
+        });
+
+        arrowRight.addEventListener("click", function () {
+          moveCarousel(1);
+        });
+
+        function moveCarousel(direction) {
+          currentIndex += direction;
+          if (currentIndex < 0) {
+            currentIndex = totalSlides - 3; // Adjust for number of visible items
+          } else if (currentIndex > totalSlides - 3) {
+            currentIndex = 0;
+          }
+          const offset = -currentIndex * (20 / 3); // Adjust for number of visible items
+          carousel.querySelector(
+            ".carousel"
+          ).style.transform = `translateX(${offset}%)`;
+        }
+      });
+    </script>
+  </body>
 </html>
