@@ -24,16 +24,6 @@ header {
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
-* {
-  padding: 0px;
-  margin: 0px;
-}
-header {
-  background-color: #fff2d8;
-  height: 175 px;
-  width: 100%;
-}
-
 .guiasHeader {
   color: #190b00;
   font-family: "Inter", sans-serif;
