@@ -103,87 +103,7 @@ header {
   right: 350px;
 }
 
-/* Login--------------------------------------------*/
-nav {
-  background-color: #fff2d8;
-}
-
-.caixaLogin {
-  position: relative;
-}
-
-.imgMorango {
-  display: block;
-  width: 75%;
-  height: 700px;
-  margin-left: 12%;
-}
-
-.telaLogin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff2d8;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 800px;
-  height: 300px;
-}
-
-.login {
-  font-family: "Inter", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.emailPassword {
-  font-family: "Inter", sans-serif;
-  height: 40px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  border-style: none;
-}
-
-.telaLogin button {
-  padding-inline-start: 10rem;
-  padding-inline-end: 10rem;
-  height: 35px;
-  background-color: #407536;
-  border-radius: 6px;
-  border-style: none;
-}
-
-.login-button {
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-}
-
-.EsqueceuSenha {
-  font-family: "Inter", sans-serif;
-  color: #407536;
-}
-
-/* Menu--------------------------------------------*/
-.menu-body {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: 1fr 50% 1fr;
-}
-.menu-header {
-  grid-area: header;
-}
-.menu-main {
-  grid-area: main;
-}
-.menu-footer {
-  grid-area: footer;
-}
+/* Cards Frutas--------------------------------------------*/
 
 .container-cards {
   display: flex;
@@ -251,6 +171,8 @@ nav {
   cursor: pointer;
 }
 
+/* Pop-up de informações nutricionais --------------------------------------------*/
+
 .popup {
   display: none;
   position: fixed;
@@ -297,37 +219,6 @@ nav {
   padding-top: 50px;
 }
 
-/* Mensagem Sucesso--------------------------------------------*/
-.msgSucesso-body {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: 1fr 80% 1fr;
-}
-.menu-header {
-  grid-area: header;
-}
-.msgSucesso-main {
-  grid-area: main;
-  background-image: url(img/contato_BG.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.menu-footer {
-  grid-area: footer;
-}
-.msgSucesso-body {
-}
-.msgSucesso-main {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-}
 /* Checkout - Card ----------------------------------*/
 .checkout-main {
   font-family: "Inter", sans-serif;
@@ -605,110 +496,4 @@ nav {
   max-width: calc(
     100% - 20px
   ); /* Garante que a largura máxima seja 100% - a margem */
-}
-
-/* Contato --------------------------------------------*/
-.envieMenssagem {
-  background-image: url("contato_BG.png");
-  background-color: green;
-}
-
-.telaMenssagem {
-  font-family: "Inter", sans-serif;
-  font-size: medium;
-  background-color: transparent;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 50px;
-  text-align: center;
-  width: 800px;
-  height: 350px;
-}
-
-.textCard {
-  padding-inline-start: 2%;
-  padding-inline-end: 50%;
-  font-family: "Inter", sans-serif;
-  height: 60px;
-  background-color: #ffffff;
-  border-radius: 30px;
-}
-
-.telaMenssagem Button {
-  font-size: medium;
-  padding-inline-start: 50px;
-  padding-inline-end: 50px;
-  height: 70px;
-  background-color: #407536;
-  border-radius: 100px;
-  border-style: none;
-}
-
-.enviarButton {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.imgContato {
-  display: block;
-  width: 100%;
-}
-
-/* Como Funciona --------------------------------------------*/
-.comoFunciona {
-  font-family: "Inter", sans-serif;
-  background-color: #ffffff;
-  height: 550px;
-  padding: 100px;
-  width: 50%;
-}
-
-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  margin-left: 50px;
-  margin-top: 30px;
-}
-
-.fontStrong {
-  font-weight: 400;
-}
-
-.paragrafo {
-  position: relative;
-  font-family: "Inter", sans-serif;
-  font-weight: 320;
-  font-size: 40px;
-  color: #190b00;
-  width: 1080px;
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 375px;
-  left: 150px;
-  margin-top: 85px;
-}
-
-.compreButton {
-  font-size: xx-large;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #fa6662;
-  padding-inline-start: 70px;
-  padding-inline-end: 70px;
-  height: 115px;
-  border-radius: 100px;
-  border-style: none;
-  position: absolute;
-  top: 1050px;
-  left: 150px;
-}
-
-.kiwiImg {
-  margin-left: 67%;
-  width: 33%;
 }

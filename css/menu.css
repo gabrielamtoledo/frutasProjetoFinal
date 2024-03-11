@@ -1,0 +1,17 @@
+.menu-body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 1fr 50% 1fr;
+}
+.menu-header {
+  grid-area: header;
+}
+.menu-main {
+  grid-area: main;
+}
+.menu-footer {
+  grid-area: footer;
+}

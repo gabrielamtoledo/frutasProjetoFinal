@@ -1,0 +1,61 @@
+nav {
+  background-color: #fff2d8;
+}
+
+.caixaLogin {
+  position: relative;
+}
+
+.imgMorango {
+  display: block;
+  width: 75%;
+  height: 700px;
+  margin-left: 12%;
+}
+
+.telaLogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff2d8;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 800px;
+  height: 300px;
+}
+
+.login {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.emailPassword {
+  font-family: "Inter", sans-serif;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-style: none;
+}
+
+.telaLogin button {
+  padding-inline-start: 10rem;
+  padding-inline-end: 10rem;
+  height: 35px;
+  background-color: #407536;
+  border-radius: 6px;
+  border-style: none;
+}
+
+.login-button {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.EsqueceuSenha {
+  font-family: "Inter", sans-serif;
+  color: #407536;
+}
