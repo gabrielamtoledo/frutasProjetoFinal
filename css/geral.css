@@ -10,7 +10,6 @@
   height: auto;
   margin: 20px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 * {
   padding: 0px;
@@ -365,11 +364,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-end;
   gap: 10px;
   position: relative;
   align-self: stretch;
-  color: #ebebeb;
+  color: #0c0c0c;
   width: 100%;
   flex: 0 0 auto;
 }
@@ -380,7 +379,7 @@ header {
   font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
   font-size: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 10px;
   padding: 0px 75px;
   position: relative;

@@ -1,214 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <style>
-      /* criar javascript para adicionar ao carrinho e selecionar a quantidade de produtos */
-    </style>
-    <link rel="stylesheet" href="css/geral.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <style></style>
-  </head>
-  <body class="menu-body">
-    <header>
-      <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
-      <ul id="guiasHeader">
-        <li><a class="guiasHeader" href="index.html">Home</a></li>
-        <li><a class="guiasHeader selected" href="menu.html">Menu</a></li>
-        <li>
-          <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
-        </li>
-        <li><a class="guiasHeader" href="contato.html">Contato</a></li>
-      </ul>
-      <div id="carrinhoProdutor">
-        <img id="addToCart" src="img/iconeCesta.png" alt="carrinho" /><a
-          href="login.html"
-          ><button id="botaoAreaProdutor">Área do produtor</button></a
-        >
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/geral.css" />
+  <link rel="stylesheet" href="css/menu.css" />
 
-    <main class="menu-main">
-      <div id="textoSectionMenu">
-        Escolha as frutas que deseja adicionar ao carrinho
-      </div>
-      <div class="container-cards">
-        <div class="card">
-          <img
-            onclick="handleGetFruit('apple')"
-            class="fruit-img getFruitButton openPopupBtn"
-            src="img/apple.png"
-            alt="Maçã"
-            width="200px"
-            ,
-          />
-          <p>Maca, 1Kg</p>
-          <h2>R$5.00</h2>
-          <div class="quantity">
-            <div class="quantity-controlers">
-              <button class="decreaseBtn">-</button>
-              <span class="quantityValue">0</span>
-              <button class="increaseBtn">+</button>
-            </div>
-            <div class="add-to-cart">
-              <a href="checkoutMaca.html">
-                <img src="img/iconBasket.png" alt="cesta" />
-              </a>
-            </div>
+</head>
+
+<body class="menu-body">
+  <header>
+    <img id="logoFrutaWeb" src="img/logoFrutaWeb.png" alt="logo" />
+    <ul id="guiasHeader">
+      <li><a class="guiasHeader" href="index.html">Home</a></li>
+      <li><a class="guiasHeader selected" href="menu.html">Menu</a></li>
+      <li>
+        <a class="guiasHeader" href="comoFunciona.html">Como Funciona </a>
+      </li>
+      <li><a class="guiasHeader" href="contato.html">Contato</a></li>
+    </ul>
+    <div id="carrinhoProdutor">
+      <a href="checkoutGeral.html"><img id="seeCart" src="img/iconeCesta.png" alt="carrinho"/></a>
+      <a href="login.html"><button id="botaoAreaProdutor">Área do produtor</button></a>
+    </div>
+  </header>
+
+  <main class="menu-main">
+    <div id="textoSectionMenu">
+      Escolha as frutas que deseja adicionar ao carrinho
+    </div>
+    <div class="container-cards">
+      <div class="card">
+        <img onclick="handleGetFruit('apple')" class="fruit-img getFruitButton openPopupBtn" src="img/apple.png"
+          alt="Maçã" width="200px" />
+        <p>Maca, 1Kg</p>
+        <h2>R$5.00</h2>
+        <div class="quantity">
+          <div class="quantity-controlers">
+            <button class="decreaseBtn" onclick="decreaseQuantity('maçã')">-</button>
+            <span id="apple-quantity" class="quantityValue">0</span>
+            <button class="increaseBtn" onclick="increaseQuantity('maçã')">+</button>
+          </div>
+          <div class="add-to-cart">
+            <button onclick="addToCart('Maçã')">
+              <img src="img/iconBasket.png" alt="cesta" />
+            </button>
           </div>
         </div>
-
         <div class="card">
-          <img
-            onclick="handleGetFruit('banana')"
-            class="fruit-img getFruitButton openPopupBtn"
-            src="img/banana.png"
-            alt="Banana"
-            width="200px"
-          />
+          <img onclick="handleGetFruit('banana')" class="fruit-img getFruitButton openPopupBtn" src="img/banana.png"
+            alt="Banana" width="200px" />
           <p>Banana, 1Kg</p>
           <h2>R$2.00</h2>
           <div class="quantity">
             <div class="quantity-controlers">
-              <button class="decreaseBtn">-</button>
-              <span class="quantityValue">0</span>
-              <button class="increaseBtn">+</button>
+              <button class="decreaseBtn" onclick="decreaseQuantity('banana')">-</button>
+              <span id="banana-quantity" class="quantityValue">0</span>
+              <button class="increaseBtn" onclick="increaseQuantity('banana')">+</button>
             </div>
             <div class="add-to-cart">
-              <a href="checkoutBanana.html">
+              <button onclick="addToCart('banana')">
                 <img src="img/iconBasket.png" alt="cesta" />
-              </a>
+              </button>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <img
-            onclick="handleGetFruit('kiwi')"
-            class="fruit-img getFruitButton openPopupBtn"
-            src="img/kiwi.png"
-            alt="Kiwi"
-            width="200px"
-          />
-          <p>Kiwi, 1Kg</p>
-          <h2>R$10.99</h2>
-          <div class="quantity">
-            <div class="quantity-controlers">
-              <button class="decreaseBtn">-</button>
-              <span class="quantityValue">0</span>
-              <button class="increaseBtn">+</button>
+          <div class="card">
+            <img onclick="handleGetFruit('kiwi')" class="fruit-img getFruitButton openPopupBtn" src="img/kiwi.png"
+              alt="Kiwi" width="200px" />
+            <p>Kiwi, 1Kg</p>
+            <h2>R$10.99</h2>
+            <div class="quantity">
+              <div class="quantity-controlers">
+                <button class="decreaseBtn" onclick="decreaseQuantity('kiwi')">-</button>
+                <span id="kiwi-quantity" class="quantityValue">0</span>
+                <button class="increaseBtn" onclick="increaseQuantity('kiwi')">+</button>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart('kiwi')">
+                  <img src="img/iconBasket.png" alt="cesta" />
+                </button>
+              </div>
             </div>
-            <div class="add-to-cart">
-              <a href="checkoutKiwi.html">
-                <img src="img/iconBasket.png" alt="cesta" />
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="card">
-          <img
-            onclick="handleGetFruit('orange')"
-            class="fruit-img getFruitButton openPopupBtn"
-            src="img/orange.png"
-            alt="Laranja"
-            width="200px"
-          />
-          <p>Laranja, 1Kg</p>
-          <h2>R$8.99</h2>
-          <div class="quantity">
-            <div class="quantity-controlers">
-              <button class="decreaseBtn">-</button>
-              <span class="quantityValue">0</span>
-              <button class="increaseBtn">+</button>
-            </div>
-            <div class="add-to-cart">
-              <a href="checkoutLaranja.html">
-                <img src="img/iconBasket.png" alt="cesta" />
-              </a>
-            </div>
-          </div>
-        </div>
+            <div class="card">
+              <img onclick="handleGetFruit('orange')" class="fruit-img getFruitButton openPopupBtn" src="img/orange.png"
+                alt="Laranja" width="200px" />
+              <p>Laranja, 1Kg</p>
+              <h2>R$8.99</h2>
+              <div class="quantity">
+                <div class="quantity-controlers">
+                  <button class="decreaseBtn" onclick="decreaseQuantity('laranja')">-</button>
+                  <span id="orange-quantity" class="quantityValue">0</span>
+                  <button class="increaseBtn" onclick="increaseQuantity('laranja')">+</button>
+                </div>
+                <div class="add-to-cart">
+                  <button onclick="addToCart('Laranja')">
+                    <img src="img/iconBasket.png" alt="cesta" />
+                  </button>
+                </div>
+              </div>
 
-        <div class="card">
-          <img
-            onclick="handleGetFruit('mango')"
-            class="fruit-img getFruitButton openPopupBtn"
-            src="img/mango.png"
-            alt="Manga"
-            width="200px"
-          />
-          <p>Manga, 1Kg</p>
-          <h2>R$5.99</h2>
-          <div class="quantity">
-            <div class="quantity-controlers">
-              <button class="decreaseBtn">-</button>
-              <span class="quantityValue">0</span>
-              <button class="increaseBtn">+</button>
-            </div>
-            <div class="add-to-cart">
-              <a href="checkoutManga.html">
-                <img src="img/iconBasket.png" alt="cesta" />
-              </a>
-            </div>
-          </div>
-        </div>
+              <div class="card">
+                <img onclick="handleGetFruit('mango')" class="fruit-img getFruitButton openPopupBtn" src="img/mango.png"
+                  alt="Manga" width="200px" />
+                <p>Manga, 1Kg</p>
+                <h2>R$5.99</h2>
+                <div class="quantity">
+                  <div class="quantity-controlers">
+                    <button class="decreaseBtn" onclick="decreaseQuantity('manga')">-</button>
+                    <span id="mango-quantity" class="quantityValue">0</span>
+                    <button class="increaseBtn" onclick="increaseQuantity('manga')">+</button>
+                  </div>
+                  <div class="add-to-cart">
+                    <button onclick="addToCart('manga')">
+                      <img src="img/iconBasket.png" alt="cesta" />
+                    </button>
+                  </div>
+                </div>
 
-        <div class="card">
-          <img
-            onclick="handleGetFruit('pineapple')"
-            class="fruit-img getFruitButton openPopupBtn"
-            src="img/pineapple.png"
-            alt="Abacaxi"
-            width="200px"
-          />
-          <p>Abacaxi, 1Kg</p>
-          <h2>R$9.99</h2>
-          <div class="quantity">
-            <div class="quantity-controlers">
-              <button class="decreaseBtn">-</button>
-              <span class="quantityValue">0</span>
-              <button class="increaseBtn">+</button>
-            </div>
-            <div class="add-to-cart">
-              <a href="checkoutAbacaxi.html">
-                <img src="img/iconBasket.png" alt="cesta" />
-              </a>
-            </div>
-          </div>
-        </div>
+                <div class="card">
+                  <img onclick="handleGetFruit('pineapple')" class="fruit-img getFruitButton openPopupBtn"
+                    src="img/pineapple.png" alt="Abacaxi" width="200px" />
+                  <p>Abacaxi, 1Kg</p>
+                  <h2>R$9.99</h2>
+                  <div class="quantity">
+                    <div class="quantity-controlers">
+                      <button class="decreaseBtn" onclick="decreaseQuantity('abacaxi')">-</button>
+                      <span id="pineapple-quantity" class="quantityValue">0</span>
+                      <button class="increaseBtn" onclick="increaseQuantity('abacaxi')">+</button>
+                    </div>
+                    <div class="add-to-cart">
+                      <button onclick="addToCart('abacaxi')">
+                        <img src="img/iconBasket.png" alt="cesta" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  </main>
+
+  <footer>
+    <div class="footer menu-footer">
+      <ul id="guiasFooter" class="guiasFooter">
+        <li><a href="comoFunciona.html">Como Funciona</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <div class="imagensLogoLine">
+        <img class="line" src="img/footerLine.png" alt="linha" />
+        <img class="logo" src="img/logoFrutaWeb.png" alt="logoFrutaWeb"/>
       </div>
-    </main>
+      <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
+      <img class="iconesMidia" src="img/iconesMidiaSocial.png" alt="Mídiias sociais"/>
+      <img class="iconesCartoes" src="img/logosCartoes.png" alt="cartões"/>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="footer menu-footer">
-        <ul id="guiasFooter" class="guiasFooter">
-          <li><a href="comoFunciona.html">Como Funciona</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-        <div class="imagensLogoLine">
-          <img class="line" src="img/footerLine.png" />
-          <img class="logo" src="img/logoFrutaWeb.png" />
-        </div>
-        <p class="p">@ 2023 FrutaWeb, Inc. All rights reserved.</p>
-        <img class="iconesMidia" src="img/iconesMidiaSocial.png" />
-        <img class="iconesCartoes" src="img/logosCartoes.png" />
-      </div>
-    </footer>
-
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <span class="close" id="closePopupBtn">&times;</span>
-        <div class="container">
-          <div id="card"></div>
-        </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopupBtn">&times;</span>
+      <div class="container">
+        <div id="card"></div>
       </div>
     </div>
+  </div>
 
-    <script src="scripts/scriptcards.js"></script>
-  </body>
+  <script src="scripts/scriptcards.js"></script>
+  <script src="scripts/menu.js"> </script>
+</body>
 </html>
