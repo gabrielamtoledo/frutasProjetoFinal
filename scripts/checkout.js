@@ -22,7 +22,6 @@ function displayCart() {
 // Function to clear the cart after checkout
 function clearCart() {
     localStorage.removeItem('cart');
-    alert('Checkout complete! Your cart has been cleared.');
     window.location.href = 'index.html'; // Redirect to homepage after checkout
 }
 

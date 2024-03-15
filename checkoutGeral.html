@@ -6,9 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/geral.css" />
   <style>
+    .produtosCarrinho {
+      display: grid;
+      grid-template-areas: 
+      "titulo"
+      "produtos";
+      border-width: 5px;
+      border-color: #48883b;
+      border-radius: 100px;
+    }
+
     #tituloCarrinho {
+      grid-area: "titulo";
       position: relative;
-      width: fit-content;
+      width: auto;
       margin-top: -1px;
       font-family: "Inter-SemiBold", Helvetica;
       font-weight: 600;
@@ -23,9 +34,7 @@
       font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
       font-size: 20px;
       color: #0c0c0c;
-      border-width: 5px;
-      border-color: #48883b;
-      border-radius: 100px;
+      grid-area: "produtos";
     }
 
     main {
@@ -92,10 +101,13 @@
     </div>
   </header>
   <main class="checkout-main">
-    <h2 id="tituloCarrinho">Seu carrinho:</h2>
-    <section id="cartItems">
+    <div class="produtosCarrinho">
+      <h2 id="tituloCarrinho">Seu carrinho:</h2>
 
-    </section>
+      <section id="cartItems">
+
+      </section>
+    </div>
 
 
     <div class="modal" id="modal">
