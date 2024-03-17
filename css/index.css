@@ -126,6 +126,8 @@
   top: 100px;
 }
 
+/* seção info ------------------------------- */
+
 .info {
   height: 800px;
   background-color: white;
@@ -196,6 +198,8 @@
   left: 100px;
   bottom: 300px;
 }
+
+/* seção diferenciais ------------------------------ */
 
 #diferenciais {
   background-color: #fff2d8;
