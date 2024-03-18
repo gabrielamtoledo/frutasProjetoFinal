@@ -22,7 +22,7 @@ h1 {
   position: relative;
   font-family: "Inter", sans-serif;
   font-weight: 320;
-  font-size: 40px;
+  font-size: 30px;
   color: #190b00;
   width: 1080px;
   display: flex;
@@ -40,15 +40,18 @@ h1 {
   background-color: #fa6662;
   padding-inline-start: 70px;
   padding-inline-end: 70px;
-  height: 115px;
+  height: 100px;
   border-radius: 100px;
   border-style: none;
   position: absolute;
-  top: 1050px;
+  top: 900px;
   left: 150px;
 }
 
 .kiwiImg {
   margin-left: 67%;
-  width: 33%;
+  width: 20%;
+  position: relative;
+  bottom: 100px;
+  right: -100px;
 }
