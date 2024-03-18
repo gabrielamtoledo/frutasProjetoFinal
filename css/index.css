@@ -41,13 +41,13 @@
   left: 150px;
 }
 
+/* Seçao dos cards --------------------------------- */
+
 #menuIndex {
   height: 800px;
   width: 100%;
   background-color: #fff2d8;
 }
-
-/* Seçao dos cards --------------------------------- */
 
 #textoSectionMenu {
   font-size: 50px;
@@ -171,7 +171,7 @@
   width: auto;
   position: absolute;
   right: -4px;
-  top: 300px;
+  top: 360px;
   z-index: -1;
 }
 
@@ -203,7 +203,7 @@
 
 #diferenciais {
   background-color: #fff2d8;
-  height: 1000px;
+  height: 900px;
 }
 
 #textoDiferenciais {
@@ -213,15 +213,16 @@
   font-weight: 500;
   width: 570px;
   position: relative;
-  top: 400px;
+  top: 300px;
   left: 50px;
 }
 
 #logoTabela {
-  height: 96px;
+  height: 90px;
   width: auto;
   position: relative;
-  top: 10px;
+  top: 0px;
+  left: -50px;
 }
 
 #tabela {
@@ -229,15 +230,15 @@
   z-index: index 0;
   height: 550px;
   width: auto;
-  left: 525px;
-  top: 3400px;
+  right: 200px;
+  top: (3400-900) px;
 }
 
 table {
   width: 910px;
   position: absolute;
-  left: 525px;
-  top: 3375px;
+  right: 275px;
+  top: (3375-900) px;
   color: #190b00;
   font-family: "Inter", sans-serif;
   font-size: 35px;
@@ -250,11 +251,6 @@ td {
   text-align: left;
   height: 90px;
   padding-left: 5px;
-}
-
-#end {
-  height: 25px;
-  background-color: white;
 }
 
 .column1 {
@@ -272,6 +268,16 @@ td {
   border-radius: 100px;
   border: none;
   position: relative;
-  top: 500px;
+  top: 400px;
   left: 30px;
+}
+
+.nao {
+  position: relative;
+  left: 40px;
+}
+
+#end {
+  height: 50px;
+  background-color: white;
 }
