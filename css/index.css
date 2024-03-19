@@ -31,9 +31,9 @@
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 40px;
-  height: 144px;
-  width: 467px;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
   border-radius: 100px;
   border: none;
   position: absolute;
@@ -41,8 +41,10 @@
   left: 150px;
 }
 
+/* Seçao dos cards --------------------------------- */
+
 #menuIndex {
-  height: 950px;
+  height: 800px;
   width: 100%;
   background-color: #fff2d8;
 }
@@ -59,11 +61,12 @@
 }
 
 .container-cards {
-  top: 120px;
+  top: 50px;
   display: flex;
   overflow: hidden;
   width: 100%;
   position: relative;
+  justify-content: center;
 }
 
 .carousel {
@@ -113,24 +116,26 @@
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 40px;
-  height: 144px;
-  width: 467px;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
   border-radius: 100px;
   border: none;
   position: relative;
   left: 100px;
-  top: 200px;
+  top: 100px;
 }
 
+/* seção info ------------------------------- */
+
 .info {
-  height: 1300px;
+  height: 800px;
   background-color: white;
   position: relative;
   z-index: 1;
   color: #190b00;
   font-family: "Inter", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -142,7 +147,7 @@
   left: 100px;
 }
 #imgInfoKiwi {
-  height: 350px;
+  height: 200px;
   width: auto;
   position: absolute;
   right: 0px;
@@ -152,30 +157,30 @@
 
 #imgInfoMaca {
   transform: rotateX("22deg");
-  height: 500px;
+  height: 250px;
   width: auto;
   position: absolute;
-  right: 100px;
-  top: 250px;
+  right: 200px;
+  top: 150px;
   z-index: -1;
 }
 
 #imgInfoMorango {
   transform: rotateY("22deg");
-  height: 300px;
+  height: 150px;
   width: auto;
   position: absolute;
   right: -4px;
-  top: 700px;
+  top: 360px;
   z-index: -1;
 }
 
 #imgInfoBanana {
-  height: 250px;
+  height: 150px;
   width: auto;
   position: absolute;
-  right: 100px;
-  bottom: 0px;
+  right: 200px;
+  top: 550px;
   z-index: -1;
 }
 
@@ -184,19 +189,21 @@
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 40px;
-  height: 144px;
-  width: 467px;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
   border-radius: 100px;
   border: none;
   position: relative;
   left: 100px;
-  top: 150px;
+  bottom: 300px;
 }
+
+/* seção diferenciais ------------------------------ */
 
 #diferenciais {
   background-color: #fff2d8;
-  height: 1000px;
+  height: 900px;
 }
 
 #textoDiferenciais {
@@ -206,15 +213,16 @@
   font-weight: 500;
   width: 570px;
   position: relative;
-  top: 400px;
+  top: 300px;
   left: 50px;
 }
 
 #logoTabela {
-  height: 96px;
+  height: 90px;
   width: auto;
   position: relative;
-  top: 10px;
+  top: 0px;
+  left: -50px;
 }
 
 #tabela {
@@ -222,15 +230,15 @@
   z-index: index 0;
   height: 550px;
   width: auto;
-  left: 525px;
-  top: 3400px;
+  right: 200px;
+  top: (3400-900) px;
 }
 
 table {
   width: 910px;
   position: absolute;
-  left: 525px;
-  top: 3375px;
+  right: 275px;
+  top: (3375-900) px;
   color: #190b00;
   font-family: "Inter", sans-serif;
   font-size: 35px;
@@ -245,11 +253,6 @@ td {
   padding-left: 5px;
 }
 
-#end {
-  height: 25px;
-  background-color: white;
-}
-
 .column1 {
   width: 500px;
 }
@@ -259,12 +262,22 @@ td {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 40px;
-  height: 144px;
-  width: 467px;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
   border-radius: 100px;
   border: none;
   position: relative;
-  top: 500px;
+  top: 400px;
   left: 30px;
+}
+
+.nao {
+  position: relative;
+  left: 40px;
+}
+
+#end {
+  height: 50px;
+  background-color: white;
 }
