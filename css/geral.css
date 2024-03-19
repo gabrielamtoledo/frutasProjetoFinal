@@ -144,16 +144,22 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+
+.gray-button{
+  background-color: #190b00;
+}
+
 .add-to-cart {
   height: 25px;
   border-radius: 0px 100px 100px 0px;
   padding: 5px 20px 0px 20px;
-  background-color: #190b00;
+  background-color: gray;
   margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .add-to-cart img {
   height: 20px;
 }
