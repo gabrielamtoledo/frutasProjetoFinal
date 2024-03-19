@@ -5,7 +5,7 @@
   grid-template-areas: "produto dados";
   gap: 300px;
   align-items: start;
-  padding: 30px 30px;
+  padding-top: 150px;
 }
 
 /* .checkout-produto {
@@ -180,7 +180,11 @@
     "produtos";
   border-width: 5px;
   border-color: #48883b;
-  border-radius: 100px;
+  border-radius: 10px;
+  background-color: #fff2d8;
+  padding: 50px;
+  color: #190b00;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 #tituloCarrinho {
