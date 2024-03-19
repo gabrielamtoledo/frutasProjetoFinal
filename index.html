@@ -43,7 +43,7 @@
         Escolha as frutas que deseja adicionar ao carrinho
       </div>
       <div class="container-cards">
-        <div class="carousel">
+        <div class="carousel" id="carousel">
           <div class="card">
             <img
               onclick="handleGetFruit('apple')"
@@ -263,14 +263,8 @@
             </div>
           </div>
         </div>
-        <div class="arrow arrow-left">
-          &lt;
-          <img id="setaEsq" src="img/iconArrowLeft.png" alt="seta esquerda" />
-        </div>
-        <div class="arrow arrow-right">
-          &gt;
-          <img id="setaDir" src="img/iconArrowRight.png" alt="seta direita" />
-        </div>
+        <div class="arrow arrow-left" id="arrow-left">&lt;</div>
+        <div class="arrow arrow-right" id="arrow-right">&gt;</div>
       </div>
       <!-- <img id="setaEsq" src="img/iconArrowLeft.png" alt="seta esquerda" />
       <img id="setaDir" src="img/iconArrowRight.png" alt="seta direita" /> -->
@@ -359,36 +353,6 @@
     </footer>
 
     <script src="scripts/scriptcards.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const carousel = document.querySelector(".container-cards");
-        const slides = carousel.querySelectorAll(".card");
-        const totalSlides = slides.length;
-        const arrowLeft = carousel.querySelector(".arrow-left");
-        const arrowRight = carousel.querySelector(".arrow-right");
-        let currentIndex = 0;
-
-        arrowLeft.addEventListener("click", function () {
-          moveCarousel(-1);
-        });
-
-        arrowRight.addEventListener("click", function () {
-          moveCarousel(1);
-        });
-
-        function moveCarousel(direction) {
-          currentIndex += direction;
-          if (currentIndex < 0) {
-            currentIndex = totalSlides - 3; // Adjust for number of visible items
-          } else if (currentIndex > totalSlides - 3) {
-            currentIndex = 0;
-          }
-          const offset = -currentIndex * (20 / 3); // Adjust for number of visible items
-          carousel.querySelector(
-            ".carousel"
-          ).style.transform = `translateX(${offset}%)`;
-        }
-      });
-    </script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
