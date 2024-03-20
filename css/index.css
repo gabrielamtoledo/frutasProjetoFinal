@@ -79,7 +79,7 @@
 
 .arrow {
   position: absolute;
-  top: 50%;
+  top: 1350px;
   transform: translateY(-50%);
   cursor: pointer;
   background: #ffffff;
