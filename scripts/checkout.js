@@ -72,7 +72,7 @@ function displayCart() {
   // Exibir o valor total
   var totalElement = document.createElement("div");
   totalElement.innerHTML =
-    "<br /><h3>Total: R$" + totalValue.toFixed(2) + "</h3>";
+    "<br /><hr><br><h3>Total: R$" + totalValue.toFixed(2) + "</h3>";
   cartItems.appendChild(totalElement);
 }
 // função para limpar carrinho após a compra

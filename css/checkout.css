@@ -246,3 +246,10 @@ main {
   text-decoration: none;
   cursor: pointer;
 }
+
+hr {
+  border: none;
+  border-top: 20px dotted white; /* Set the dashed line with white color */
+  border-radius: 0px; /* Make the line rounded */
+  border-width: 8px 10px; /* Set the length of dashes and gaps */
+}
