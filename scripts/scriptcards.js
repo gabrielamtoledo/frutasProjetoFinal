@@ -1,3 +1,44 @@
+function addToCart(item) {
+  // Retrieve the quantity of the item
+  var quantityElement = document.getElementById(item + "-quantity");
+  if (quantityElement) {
+    var quantity = parseInt(quantityElement.innerText);
+    if (!isNaN(quantity) && quantity > 0) {
+      // Verifica se a quantidade é válida e maior que zero
+      // Add the item and quantity to the cart (you can use localStorage or sessionStorage)
+      var cart = JSON.parse(localStorage.getItem("cart")) || {};
+      cart[item] = (cart[item] || 0) + quantity; // Adiciona a quantidade selecionada
+      localStorage.setItem("cart", JSON.stringify(cart));
+      // displayCart();
+      console.log(cart);
+    }
+
+    // Provide feedback to the user
+    alert("Item adicionado ao carrinho!");
+  } else {
+    console.error("Quantidade inválida para o item " + item);
+  }
+
+  function getCart() {
+    return JSON.parse(localStorage.getItem("cart")) || {};
+  }
+
+  function displayCart() {
+    var cart = getCart();
+    var cartItems = document.getElementById("cartItems");
+    cartItems.innerHTML = "";
+
+    for (var item in cart) {
+      if (cart.hasOwnProperty(item)) {
+        var quantity = cart[item];
+        var itemElement = document.createElement("div");
+        itemElement.innerHTML = "<p>" + item + ": " + quantity + "</p>";
+        cartItems.appendChild(itemElement);
+      }
+    }
+  }
+}
+
 const decreaseBtns = document.querySelectorAll(".decreaseBtn");
 const increaseBtns = document.querySelectorAll(".increaseBtn");
 const quantitySpans = document.querySelectorAll(".quantityValue");
@@ -9,17 +50,30 @@ function updateQuantity(index) {
 }
 
 for (let i = 0; i < decreaseBtns.length; i++) {
-  decreaseBtns[i].addEventListener("click", function () {
+  decreaseBtns[i].addEventListener("click", function (event) {
     if (quantities[i] > 0) {
       quantities[i]--;
       updateQuantity(i);
+      buttonColor(quantities[i], this.closest(".card"));
     }
   });
 
-  increaseBtns[i].addEventListener("click", function () {
+  increaseBtns[i].addEventListener("click", function (event) {
     quantities[i]++;
     updateQuantity(i);
+    buttonColor(quantities[i], this.closest(".card"));
   });
+}
+
+function buttonColor(quantity, parentCard) {
+  var button = parentCard.querySelector(".add-to-cart");
+  if (quantity > 0) {
+    button.style.backgroundColor = "#190b00"; // Change button color when quantity is greater than 0
+    console.log("Gray-button class added");
+  } else {
+    button.style.backgroundColor = "gray"; // Change button color when quantity is 0
+    console.log("Gray-button class removed");
+  }
 }
 
 //pop-up das informações da fruta
@@ -96,15 +150,3 @@ document.querySelectorAll(".getFruitButton").forEach((button) => {
     }
   });
 });
-
-// document.querySelectorAll(".getFruitButton").forEach((button) => {
-//   button.addEventListener("click", async () => {
-//     try {
-//       const fruitName = "apple"; // You can change this to the desired fruit name
-//       const fruit = await getFruit(fruitName);
-//       renderFruit(fruit);
-//     } catch (error) {
-//       console.error("Error fetching fruit:", error);
-//     }
-//   });
-// });
