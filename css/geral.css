@@ -122,7 +122,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 .fruit-img {
   width: 200px;

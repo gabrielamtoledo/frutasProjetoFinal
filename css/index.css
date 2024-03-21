@@ -220,7 +220,7 @@
 }
 
 #logoTabela {
-  height: 55px;
+  height: 70px;
   width: auto;
   position: relative;
   top: 0px;
@@ -269,8 +269,8 @@ table {
   width: 50%;
   position: absolute;
   right: 200px;
-  border: 5px solid #fff2d8;
-  border-radius: 20px; /* Rounded corners */
+  border: 8px solid #fff2d8;
+  border-radius: 20px;
   overflow: hidden; /* Ensure rounded corners are applied properly */
   background-color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -282,7 +282,7 @@ th,
 td {
   text-align: center;
   padding: 10px;
-  border: 5px solid #fff2d8;
+  border: 8px solid #fff2d8;
 }
 .column1 {
   text-align: start;

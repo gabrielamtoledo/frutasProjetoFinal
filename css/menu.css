@@ -4,14 +4,29 @@
     "header"
     "main"
     "footer";
-  grid-template-rows: 1fr 50% 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  /* grid-template-rows: auto; */
+  height: 100vh;
+  /* Ensure the grid takes up the full viewport height */
 }
-.menu-header {
+
+.header {
   grid-area: header;
 }
-.menu-main {
+
+.main {
   grid-area: main;
+  /* overflow-y: auto;  */
+  /* Allow vertical scrolling if content exceeds the height */
 }
-.menu-footer {
+
+.footer {
   grid-area: footer;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-body {
+    grid-template-rows: auto; /* Let the rows adjust automatically */
+  }
 }
