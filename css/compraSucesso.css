@@ -1,29 +1,50 @@
-.msgSucesso-body {
+.compraSucesso-body {
   display: grid;
   grid-template-areas:
     "header"
     "main"
     "footer";
-  grid-template-rows: 1fr 80% 1fr;
+  grid-template-rows: 1fr 40% 1fr;
 }
+
 .menu-header {
   grid-area: header;
 }
-.msgSucesso-main {
+
+.compraSucesso-main {
   grid-area: main;
-  background-image: url(img/contato_BG.png);
+  background-image: url(img/compra_BG.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .menu-footer {
   grid-area: footer;
 }
 
-.msgSucesso-main {
+
+.compraSucesso-main{
   font-family: "Inter", sans-serif;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  color: #190b00;
+}
+
+#check {
+  height: auto;
+  width: 150px;
+}
+#parabens {
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#compraFinalizada {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 500;
 }
