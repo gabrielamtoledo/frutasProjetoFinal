@@ -13,7 +13,7 @@
 
 .compraSucesso-main {
   grid-area: main;
-  background-image: url(img/compra_BG.png);
+  background-image: url(../img/compra_BG.png)
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
